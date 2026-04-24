@@ -1,0 +1,40 @@
+plugins {
+    id "application"
+    id "org.checkerframework" version "0.6.37"
+}
+
+group = "com.imaginary"
+
+application {
+    mainClass = "com.imaginary.lwp.ObjectServerImpl"
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+apply plugin: "org.checkerframework"
+
+dependencies {
+    compileOnly("io.github.eisop:checker-qual:3.42.0-eisop4")
+    testCompileOnly("io.github.eisop:checker-qual:3.42.0-eisop4")
+    checkerFramework("io.github.eisop:checker:3.42.0-eisop4")
+
+    compileOnly("io.github.eisop:opsc:0.0.1-SNAPSHOT")
+    checkerFramework("io.github.eisop:opsc:0.0.1-SNAPSHOT")
+}
+
+checkerFramework {
+    checkers = [
+            'io.github.eisop.opsc.OpsChecker'
+    ]
+    extraJavacArgs = [
+            '-AdbUrl=jdbc:postgresql://localhost:5432/bank',
+            '-AdbUser=postgres',
+            '-AdbPassword=postgres',
+            '-Awarns',
+//            '-AopsLogDir=/absolute/path/here'
+    ]
+}
+

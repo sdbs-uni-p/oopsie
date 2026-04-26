@@ -132,6 +132,7 @@ def run_experiments():
             script_path = os.path.join(project_path, script_name)
             
             if not os.path.isfile(script_path) or not os.access(script_path, os.X_OK):
+                print(f"  Script {script_name} is not executable or missing.", flush=True)
                 continue
 
             print(f"  Running {script_name} ({NUM_RUNS} runs)...", flush=True)

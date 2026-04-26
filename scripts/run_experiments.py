@@ -107,6 +107,11 @@ def run_experiments():
                     text=True,
                     check=False
                 )
+                if result.returncode != 0:
+                    print(f"  prerun.sh failed with exit code {result.returncode}")
+                    print(result.stdout)
+                    print(result.stderr)
+                    continue
                 print("  prerun.sh completed successfully.")
                 log_file = os.path.join("logs", f"{project_dir}_prerun.log")
                 with open(log_file, "w") as f:

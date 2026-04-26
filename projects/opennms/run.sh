@@ -19,8 +19,11 @@ done
 scriptDir=$(dirname -- "$(readlink -f -- "$BASH_SOURCE")")
 cd $scriptDir
 
-cd opennms
-git switch repro/opsc-annotated
+cd opennms-noannos
+
+# assemble
+echo "Assembling project with ./compile.pl..."
+./compile.pl -DskipTests=true --projects :opennms-webapp -am install
 
 # --- FIX: Calculate the Host Path ---
 # 1. Get the path relative to the container root (/artifact)

@@ -124,7 +124,11 @@ def run_experiments():
                 continue
 
 
-        for script_name in ["run.sh", "run-skipcf.sh"]:
+        # Find and run all scripts matching run*.sh
+        for script_name in os.listdir(project_path):
+            if not script_name.startswith("run") or not script_name.endswith(".sh"):
+                continue
+
             script_path = os.path.join(project_path, script_name)
             
             if not os.path.isfile(script_path) or not os.access(script_path, os.X_OK):
@@ -140,7 +144,7 @@ def run_experiments():
             for i in range(1, NUM_RUNS + 1):
                 # Construct command: /usr/bin/time -v ./run.sh
                 # We use bash explicitly to ensure the script runs
-                cmd = ["/usr/bin/time", "-v", "bash", f"./{script_name}", "--opslogdir", opslogdir]
+                cmd = ["/usr/bin/time", "-v", "bash", f"{script_name}", "--opslogdir", opslogdir]
                 
                 try:
                     # Run process

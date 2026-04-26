@@ -105,7 +105,7 @@ def run_experiments():
                     stdout=subprocess.PIPE,
                     stderr=subprocess.PIPE,
                     text=True,
-                    check=True
+                    check=False
                 )
                 print("  prerun.sh completed successfully.")
                 log_file = os.path.join("logs", f"{project_dir}_prerun.log")

@@ -67,6 +67,7 @@ def calculate_trimmed_average(values):
 # Create log directories if they don't exist
 if not os.path.exists("logs"):
     os.makedirs("logs")
+    os.makedirs(os.path.join("logs", "output"), exist_ok=True)
 
     if REPORT:
         # Delete old opslog if exists and create new

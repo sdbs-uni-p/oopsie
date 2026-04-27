@@ -65,8 +65,7 @@ def calculate_trimmed_average(values):
 # --- Main Execution ---
 
 # Create log directories if they don't exist
-if not os.path.exists("logs"):
-    os.makedirs("logs")
+if not os.path.exists(os.path.join("logs", "output")):
     os.makedirs(os.path.join("logs", "output"), exist_ok=True)
 
     if REPORT:

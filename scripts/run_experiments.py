@@ -35,6 +35,7 @@ JAVA_PATHS = {
 
 # Number of runs per script
 NUM_RUNS = int(sys.argv[1]) if len(sys.argv) > 1 else 5
+REPORT = NUM_RUNS == 1
 
 # --- Helper Functions ---
 
@@ -66,7 +67,13 @@ def calculate_trimmed_average(values):
 # Create log directories if they don't exist
 if not os.path.exists("logs"):
     os.makedirs("logs")
-    os.makedirs("logs/opslog")
+
+    if REPORT:
+        # Delete old opslog if exists and create new
+        opslog_path = os.path.join("logs", "opslog")
+        if os.path.exists(opslog_path):
+            shutil.rmtree(opslog_path)
+        os.makedirs(opslog_path)
 
 def run_experiments():
     base_dir = os.getcwd()
@@ -134,6 +141,10 @@ def run_experiments():
             if not script_name.startswith("run") or not script_name.endswith(".sh"):
                 continue
 
+            # In report mode, we only need runs with OPSC
+            if REPORT and "skipcf" in script_name or "value" in script_name:
+                continue
+
             script_path = os.path.join(project_path, script_name)
             
             if not os.path.isfile(script_path) or not os.access(script_path, os.X_OK):
@@ -145,7 +156,9 @@ def run_experiments():
             times = []
             mems = []
 
-            opslogdir = os.path.join(base_dir, "logs", "opslog", project_dir)
+            run_name = f"{project_dir}_{script_name.removesuffix('.sh')}"
+            opslog_name = "opslog" if REPORT else "opslog_performance"
+            opslogdir = os.path.join(base_dir, "logs", opslog_name, run_name)
 
             for i in range(1, NUM_RUNS + 1):
                 # Construct command: /usr/bin/time -v ./run.sh
@@ -202,4 +215,8 @@ def run_experiments():
 
 if __name__ == "__main__":
     run_experiments()
+    if REPORT:
+        # Generate result data (generate_results.py)
+        print("Experiments finished. Generating paper results...")
+        subprocess.run(["python3", "scripts/generate_results.py"], check=True)
 

@@ -19,7 +19,7 @@ done
 scriptDir=$(dirname -- "$(readlink -f -- "$BASH_SOURCE")")
 cd $scriptDir
 
-cd opennms-noannos
+cd opennms-annos
 
 # assemble
 echo "Assembling project with ./compile.pl..."

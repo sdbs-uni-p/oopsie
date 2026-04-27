@@ -29,6 +29,9 @@ RUN apt-get update && apt-get install -y \
 # Install Java versions
 RUN apt-get install -y openjdk-17-jdk openjdk-8-jdk
 
+# Python dependencies for experiment scripts
+RUN pip3 install pandas
+
 # Workaround for OpenNMS: Perl script `ulimit` to be in PATH
 RUN echo '#!/bin/bash' > /usr/local/bin/ulimit && \
     echo 'builtin ulimit "$@"' >> /usr/local/bin/ulimit && \

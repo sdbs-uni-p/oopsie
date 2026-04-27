@@ -166,8 +166,12 @@ def collect_opslog(project_dir, project_name):
 
 if __name__ == "__main__":
     projects = [
-        ("projects/opennms/opennms-run", "OpenNMS (no annotations)"),
-        ("projects/opennms/opennms-run-annos", "OpenNMS (annotated)"),
+        ("projects/oreilly-bank", "O'Reilly Bank"),
+        ("projects/escadatpc-c", "EscadaTPC-C"),
+        ("projects/java-design-patterns", "Java Design Patterns"),
+        ("projects/jdbc-course", "JDBC Course")
+        # ("projects/opennms/opennms-run", "OpenNMS (no annotations)"),
+        # ("projects/opennms/opennms-run-annos", "OpenNMS (annotated)"),
     ]
 
     for path, name in projects:

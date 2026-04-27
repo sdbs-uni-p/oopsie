@@ -12,13 +12,13 @@ PROJECTS_DIR = os.path.join(os.getcwd(), "projects")
 
 
 SUBDIRS = [
-    # "escadatpc-c",
-    # "java-design-patterns",
-    # "jdbc-course",
-    "opennms",
+    "oreilly-bank"
+    "escadatpc-c",
+    "java-design-patterns",
+    "jdbc-course",
+    # "opennms",
     # "opsc-tests",
     # "opsc-tests-skipcf",
-    # "oreilly-bank"
 ]
 
 # Map folder names to "8" or "17" (default is 17)

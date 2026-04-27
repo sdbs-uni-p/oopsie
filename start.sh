@@ -34,7 +34,7 @@ docker run --rm \
 	-v /var/run/docker.sock:/var/run/docker.sock \
 	-v "$(pwd)/logs:/artifact/logs" \
 	opsc-artifact \
-	python3 scripts/run_experiments.py
+	python3 scripts/run_experiments.py 1
 
 #docker run --rm \
 #	--net=host \

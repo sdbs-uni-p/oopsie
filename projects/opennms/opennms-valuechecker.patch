@@ -1,5 +1,5 @@
 diff --git a/opennms-webapp/pom.xml b/opennms-webapp/pom.xml
-index 96100d3c218..aae2d4f1e2d 100644
+index 96100d3c218..b3919d92677 100644
 --- a/opennms-webapp/pom.xml
 +++ b/opennms-webapp/pom.xml
 @@ -403,6 +403,86 @@

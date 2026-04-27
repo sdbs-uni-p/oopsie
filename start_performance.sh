@@ -27,21 +27,21 @@ docker build -t opsc-artifact .
 
 echo "Running experiments"
 # Mount the docker socket so the container can spawn sibling containers
-#docker run --rm \
-#	--net=host \
-#	--ulimit nofile=65536:65536 \
-#	-e HOST_PROJECT_ROOT="$(pwd)" \
-#	-v /var/run/docker.sock:/var/run/docker.sock \
-#	-v "$(pwd)/logs:/artifact/logs" \
-#	opsc-artifact \
-#	python3 scripts/run_experiments.py
-
 docker run --rm \
 	--net=host \
 	--ulimit nofile=65536:65536 \
 	-e HOST_PROJECT_ROOT="$(pwd)" \
 	-v /var/run/docker.sock:/var/run/docker.sock \
 	-v "$(pwd)/logs:/artifact/logs" \
-	-v "$(pwd)/maven-cache:/root/.m2/repository" \
 	opsc-artifact \
 	python3 scripts/run_experiments.py
+
+#docker run --rm \
+#	--net=host \
+#	--ulimit nofile=65536:65536 \
+#	-e HOST_PROJECT_ROOT="$(pwd)" \
+#	-v /var/run/docker.sock:/var/run/docker.sock \
+#	-v "$(pwd)/logs:/artifact/logs" \
+#	-v "$(pwd)/maven-cache:/root/.m2/repository" \
+#	opsc-artifact \
+#	python3 scripts/run_experiments.py

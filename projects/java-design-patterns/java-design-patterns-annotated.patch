@@ -25,7 +25,7 @@ index 000000000..7acfa1563
 +val eisopVersion = "3.49.3-eisop1"
 +
 +// specify opslogdir here
-+extra["opslogdir"] = ""
++extra["opslogdir"] = "{{{opslogdir}}}"
 +
 +allprojects {
 +    repositories {
@@ -198,7 +198,7 @@ index 000000000..fed6e9729
 +      POSTGRES_PASSWORD: postgres
 +      POSTGRES_DB: dao
 +    volumes:
-+      - ./dao.sql:/docker-entrypoint-initdb.d/dao.sql
++      - ${DB_MOUNT_PATH}/dao.sql:/docker-entrypoint-initdb.d/dao.sql
 +  postgres-domain-model:
 +    image: postgres:latest
 +    ports:
@@ -208,7 +208,7 @@ index 000000000..fed6e9729
 +      POSTGRES_PASSWORD: postgres
 +      POSTGRES_DB: domain_model
 +    volumes:
-+      - ./domain-model.sql:/docker-entrypoint-initdb.d/domain-model.sql
++      - ${DB_MOUNT_PATH}/domain-model.sql:/docker-entrypoint-initdb.d/domain-model.sql
 +  postgres-embedded-value:
 +    image: postgres:latest
 +    ports:
@@ -218,7 +218,7 @@ index 000000000..fed6e9729
 +      POSTGRES_PASSWORD: postgres
 +      POSTGRES_DB: embedded_value
 +    volumes:
-+      - ./embedded-value.sql:/docker-entrypoint-initdb.d/embedded-value.sql
++      - ${DB_MOUNT_PATH}/embedded-value.sql:/docker-entrypoint-initdb.d/embedded-value.sql
 +  postgres-serialized-entity:
 +    image: postgres:latest
 +    ports:
@@ -228,7 +228,7 @@ index 000000000..fed6e9729
 +      POSTGRES_PASSWORD: postgres
 +      POSTGRES_DB: serialized_entity
 +    volumes:
-+      - ./serialized-entity.sql:/docker-entrypoint-initdb.d/serialized-entity.sql
++      - ${DB_MOUNT_PATH}/serialized-entity.sql:/docker-entrypoint-initdb.d/serialized-entity.sql
 +  postgres-table-module:
 +    image: postgres:latest
 +    ports:
@@ -238,7 +238,7 @@ index 000000000..fed6e9729
 +      POSTGRES_PASSWORD: postgres
 +      POSTGRES_DB: table_module
 +    volumes:
-+      - ./table-module.sql:/docker-entrypoint-initdb.d/table-module.sql
++      - ${DB_MOUNT_PATH}/table-module.sql:/docker-entrypoint-initdb.d/table-module.sql
 +  postgres-transaction-script:
 +    image: postgres:latest
 +    ports:
@@ -248,7 +248,7 @@ index 000000000..fed6e9729
 +      POSTGRES_PASSWORD: postgres
 +      POSTGRES_DB: transaction_script
 +    volumes:
-+      - ./transaction-script.sql:/docker-entrypoint-initdb.d/transaction-script.sql
++      - ${DB_MOUNT_PATH}/transaction-script.sql:/docker-entrypoint-initdb.d/transaction-script.sql
 \ No newline at end of file
 diff --git a/domain-model.sql b/domain-model.sql
 new file mode 100644

@@ -16,7 +16,7 @@ index 00000000000..48834f0f076
 +    volumes:
 +      - ${DB_MOUNT_PATH}/schema.sql:/docker-entrypoint-initdb.d/schema.sql
 diff --git a/opennms-webapp/pom.xml b/opennms-webapp/pom.xml
-index 96100d3c218..f95eb03f0ef 100644
+index 96100d3c218..bb4ba070352 100644
 --- a/opennms-webapp/pom.xml
 +++ b/opennms-webapp/pom.xml
 @@ -403,6 +403,98 @@
@@ -431,6 +431,24 @@ index 8fc04de8288..e8d3e612072 100644
          Outage[] outages = null;
          List<Outage> list = new ArrayList<>();
  
+diff --git a/pom.xml b/pom.xml
+index b1608a5c76c..3b9ce797bd4 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -2458,6 +2458,13 @@
+   </profiles>
+   <dependencyManagement>
+     <dependencies>
++      <!-- CHECKER FRAMEWORK -->
++      <dependency>
++        <groupId>io.github.eisop</groupId>
++        <artifactId>checker-qual</artifactId>
++        <version>3.49.5-eisop1</version>
++      </dependency>
++
+       <!--  opennms dependencies that are outside of the opennms/trunk project -->
+       <!--  PLEASE KEEP THESE IN ALPHABETICAL ORDER -->
+       <dependency>
 diff --git a/schema.sql b/schema.sql
 new file mode 100644
 index 00000000000..8c447101a93

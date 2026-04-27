@@ -34,7 +34,7 @@ checkerFramework {
             '-AdbUser=postgres',
             '-AdbPassword=postgres',
             '-Awarns',
-//            '-AopsLogDir=/absolute/path/here'
+            '-AopsLogDir={{{opslogdir}}}'
     ]
 }
 

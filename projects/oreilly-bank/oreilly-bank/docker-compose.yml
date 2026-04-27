@@ -8,4 +8,4 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - ./db/postgres.sql:/docker-entrypoint-initdb.d/postgres.sql
+      - ${DB_MOUNT_PATH}/postgres.sql:/docker-entrypoint-initdb.d/postgres.sql

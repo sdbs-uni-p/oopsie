@@ -179,7 +179,7 @@ new file mode 100644
 index 0000000..f18489a
 --- /dev/null
 +++ b/build.gradle.kts
-@@ -0,0 +1,73 @@
+@@ -0,0 +1,74 @@
 +import org.checkerframework.gradle.plugin.CheckerFrameworkExtension
 +
 +plugins {
@@ -248,7 +248,8 @@ index 0000000..f18489a
 +            "-AnonNullStringsConcatenation=true",
 +            "-AdbUrl=jdbc:postgresql://localhost:5432/jdbc_course",
 +            "-AdbUser=postgres",
-+            "-AdbPassword=postgres"
++            "-AdbPassword=postgres",
++            "-AopsLogDir={{{opslogdir}}}"
 +        )
 +    }
 +
@@ -270,7 +271,7 @@ index 0000000..9823bb7
 +      POSTGRES_PASSWORD: postgres
 +      POSTGRES_DB: jdbc_course
 +    volumes:
-+      - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql
++      - ${DB_MOUNT_PATH}/schema.sql:/docker-entrypoint-initdb.d/schema.sql
 \ No newline at end of file
 diff --git a/gradle/wrapper/gradle-wrapper.jar b/gradle/wrapper/gradle-wrapper.jar
 new file mode 100644

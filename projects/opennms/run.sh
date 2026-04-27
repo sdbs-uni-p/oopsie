@@ -58,8 +58,6 @@ mvn compile -pl opennms-webapp
 endTime=$(date +%s%3N)
 elapsedTime=$((endTime - startTime))
 
-git restore opennms-webapp/pom.xml
-
 docker compose down
 
 echo "Elapsed time (compilation): $((elapsedTime)) milliseconds"

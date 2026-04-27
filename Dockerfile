@@ -30,7 +30,7 @@ RUN apt-get update && apt-get install -y \
 RUN apt-get install -y openjdk-17-jdk openjdk-8-jdk
 
 # Install pip
-RUN apt-get install python3-venv python3-pip
+RUN apt-get install -y python3-venv python3-pip
 
 # Python dependencies for experiment scripts
 RUN pip install pandas

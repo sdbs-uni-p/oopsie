@@ -30,7 +30,7 @@ RUN apt-get update && apt-get install -y \
 RUN apt-get install -y openjdk-17-jdk openjdk-8-jdk
 
 # Python dependencies for experiment scripts
-RUN pip install pandas
+RUN python3 -m pip install pandas
 
 # Workaround for OpenNMS: Perl script `ulimit` to be in PATH
 RUN echo '#!/bin/bash' > /usr/local/bin/ulimit && \

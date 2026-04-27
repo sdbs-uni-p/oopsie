@@ -12,7 +12,7 @@ PROJECTS_DIR = os.path.join(os.getcwd(), "projects")
 
 
 SUBDIRS = [
-    "oreilly-bank"
+    "oreilly-bank",
     "escadatpc-c",
     "java-design-patterns",
     "jdbc-course",
@@ -120,7 +120,7 @@ def run_experiments():
                     print(result.stderr)
                     continue
                 print("  prerun.sh completed successfully.")
-                log_file = os.path.join("logs", f"{project_dir}_prerun.log")
+                log_file = os.path.join("logs", "output", f"{project_dir}_prerun.log")
                 with open(log_file, "w") as f:
                     f.write(f"=== Date/Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ===\n")
                     f.write(f"=== CMD: bash ./prerun.sh ===\n\n")
@@ -178,7 +178,7 @@ def run_experiments():
                     )
 
                     script_basename, _ = os.path.splitext(script_name)
-                    log_file = os.path.join("logs", f"{project_dir}_{script_basename}_{i}.log")
+                    log_file = os.path.join("logs", "output", f"{project_dir}_{script_basename}_{i}.log")
                     with open(log_file, "w") as f:
                         f.write(f"=== Date/Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ===\n")
                         f.write(f"=== CMD: {' '.join(cmd)} ===\n")

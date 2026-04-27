@@ -145,7 +145,7 @@ def collect_opslog(project_dir, project_name):
     bindings_files = list(base_path.rglob("opslog*/bindings.csv"))
 
     if not statements_files:
-        print(f"No statements files found for {project_name}. Skipping.")
+        print(f"WARNING: No statements files found for {project_name}. Skipping.")
         return
 
     if len(statements_files) > 1:

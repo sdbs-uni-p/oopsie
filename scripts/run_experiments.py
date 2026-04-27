@@ -203,13 +203,14 @@ def run_experiments():
 
                 except Exception as e:
                     print(f"    Run {i}: CRITICAL ERROR {e}")
+                    raise e
 
             # Compute Statistics
             if len(times) >= 3:
                 avg_time = calculate_trimmed_average(times)
                 avg_mem = calculate_trimmed_average(mems)
                 print(f"  -> Result: Time={avg_time} ms, RSS={avg_mem} KB (Trimmed Avg)")
-            else:
+            elif not REPORT:
                 print(f"  -> Result: Not enough successful runs to compute average.")
             print("-" * 40)
 

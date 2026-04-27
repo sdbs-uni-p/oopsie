@@ -32,7 +32,7 @@ echo "Mounting Host Path: $DB_MOUNT_PATH"
 # ------------------------------------
 
 # In build.gradle.kts, replace {{{opslogdir}}} with --opslogdir option
-sed -i "s|{{{opslogdir}}}|$OPSLOGDIR|g" build.gradle.kts
+sed -i "s|{{{opslogdir}}}|$OPSLOGDIR|g" build.gradle
 
 
 echo "Running docker-compose up..."

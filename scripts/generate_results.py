@@ -166,10 +166,10 @@ def collect_opslog(project_dir, project_name):
 
 if __name__ == "__main__":
     projects = [
-        ("projects/oreilly-bank", "O'Reilly Bank"),
-        ("projects/escadatpc-c", "EscadaTPC-C"),
-        ("projects/java-design-patterns", "Java Design Patterns"),
-        ("projects/jdbc-course", "JDBC Course")
+        ("logs/opslog/oreilly-bank", "O'Reilly Bank"),
+        ("logs/opslog/escadatpc-c", "EscadaTPC-C"),
+        ("logs/opslog/java-design-patterns", "Java Design Patterns"),
+        ("logs/opslog/jdbc-course", "JDBC Course")
         # ("projects/opennms/opennms-run", "OpenNMS (no annotations)"),
         # ("projects/opennms/opennms-run-annos", "OpenNMS (annotated)"),
     ]

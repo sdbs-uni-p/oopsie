@@ -25,7 +25,7 @@ index 96100d3c218..aae2d4f1e2d 100644
 +                <path>
 +                  <groupId>io.github.eisop</groupId>
 +                  <artifactId>checker</artifactId>
-+                  <version>3.42.0-eisop5</version>
++                  <version>3.49.5-eisop1</version>
 +                </path>
 +                <path>
 +                  <groupId>io.github.eisop</groupId>
@@ -98,7 +98,7 @@ index 96100d3c218..aae2d4f1e2d 100644
 +    <dependency>
 +      <groupId>io.github.eisop</groupId>
 +      <artifactId>checker-qual</artifactId>
-+      <version>3.42.0-eisop5</version>
++      <version>3.49.5-eisop1</version>
 +    </dependency>
 +    <dependency>
 +      <groupId>io.github.eisop</groupId>

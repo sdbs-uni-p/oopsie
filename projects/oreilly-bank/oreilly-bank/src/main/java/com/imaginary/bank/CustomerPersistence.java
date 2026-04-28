@@ -20,7 +20,7 @@ public class CustomerPersistence extends JDBCSupport {
         "INSERT INTO CUSTOMER (CUSTOMER_ID, FIRST_NAME, LAST_NAME, " +
         "SOCIAL_SECURITY, CRT_CLASS, LUID, LUTS) " +
         "VALUES (?, ?, ?, ?, ?, ?)";
-    
+
     public void create(Transaction trans, Memento mem)
         throws PersistenceException {
         PreparedStatement stmt = null;
@@ -28,7 +28,7 @@ public class CustomerPersistence extends JDBCSupport {
         try {
             Connection conn = ((JDBCTransaction)trans).getConnection();
             int count;
-            
+
             stmt = conn.prepareStatement(CREATE);
             {
                 Long l = (Long)mem.get(BaseEntity.class, "objectID");
@@ -94,11 +94,11 @@ public class CustomerPersistence extends JDBCSupport {
             return null;
         }
     }
-    
+
     protected String getPrimaryTable() {
         return "CUSTOMER";
     }
-    
+
     static private final String SELECT =
         "SELECT FIRST_NAME, LAST_NAME, SOCIAL_SECURITY, LUID, LUTS " +
         "FROM CUSTOMER " +
@@ -106,19 +106,15 @@ public class CustomerPersistence extends JDBCSupport {
 
     static private final String LOAD_ACCOUNTS =
         "SELECT ACCOUNT_ID FROM ACCOUNT WHERE CUSTOMER_ID = ?";
-    
+
     public void load(Transaction trans, Memento mem, long oid)
         throws PersistenceException {
         PreparedStatement stmt = null;
         ResultSet rs = null;
-        
+
         mem.put(BaseEntity.class, "objectID", new Long(oid));
         try {
             Connection conn = ((JDBCTransaction)trans).getConnection();
-            
-            PreparedStatement ps = conn.prepareStatement("SELECT FIRST_NAME FROM CUSTOMER WHERE NOT (LAST_NAME = 'dd'");
-            ps.setInt(3, 10);
-            rs = ps.executeQuery();
 
             stmt = conn.prepareStatement(SELECT);
             stmt.setLong(1, oid);
@@ -159,13 +155,13 @@ public class CustomerPersistence extends JDBCSupport {
             rs = null;
             {
                 ArrayList accts = new ArrayList();
-                
+
                 stmt = conn.prepareStatement(LOAD_ACCOUNTS);
                 stmt.setLong(1, oid);
                 rs = stmt.executeQuery();
                 while( rs.next() ) {
                     long aid = rs.getLong(1);
-                    
+
                     accts.add(new AccountFacade(aid));
                 }
                 mem.put(CustomerEntity.class, Customer.ACCOUNTS, accts);
@@ -204,10 +200,10 @@ public class CustomerPersistence extends JDBCSupport {
             return fld;
         }
     }
-        
+
     static private final String REMOVE =
         "DELETE FROM CUSTOMER WHERE CUSTOMER_ID = ?";
-    
+
     public void remove(Transaction trans, long oid)
         throws PersistenceException {
         PreparedStatement stmt = null;
@@ -215,7 +211,7 @@ public class CustomerPersistence extends JDBCSupport {
         try {
             Connection conn = ((JDBCTransaction)trans).getConnection();
             int count;
-            
+
             stmt = conn.prepareStatement(REMOVE);
             stmt.setLong(1, oid);
             count = stmt.executeUpdate();
@@ -236,9 +232,9 @@ public class CustomerPersistence extends JDBCSupport {
                 catch( SQLException e ) { }
             }
         }
-        
+
     }
-    
+
     static private final String UPDATE =
         "UPDATE CUSTOMER " +
         "SET FIRST_NAME = ?, " +
@@ -255,7 +251,7 @@ public class CustomerPersistence extends JDBCSupport {
         try {
             Connection conn = ((JDBCTransaction)trans).getConnection();
             int count;
-            
+
             stmt = conn.prepareStatement(UPDATE);
             {
                 String fn = (String)mem.get(CustomerEntity.class,

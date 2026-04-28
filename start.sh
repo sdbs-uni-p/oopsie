@@ -33,6 +33,7 @@ docker run --rm \
 	-e HOST_PROJECT_ROOT="$(pwd)" \
 	-v /var/run/docker.sock:/var/run/docker.sock \
 	-v "$(pwd)/logs:/artifact/logs" \
+	-v "$(pwd)/data:/artifact/data" \
 	opsc-artifact \
 	python3 scripts/run_experiments.py 1
 
@@ -42,6 +43,7 @@ docker run --rm \
 #	-e HOST_PROJECT_ROOT="$(pwd)" \
 #	-v /var/run/docker.sock:/var/run/docker.sock \
 #	-v "$(pwd)/logs:/artifact/logs" \
+#   -v "$(pwd)/data:/artifact/data" \
 #	-v "$(pwd)/maven-cache:/root/.m2/repository" \
 #	opsc-artifact \
 #	python3 scripts/run_experiments.py 1

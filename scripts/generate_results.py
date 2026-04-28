@@ -141,35 +141,51 @@ def collect_opslog(project_dir, project_name):
     print(f"Aggregating results for {project_name}...")
 
     base_path = Path(project_dir)
-    statements_files = list(base_path.rglob("opslog*/statements.csv"))
-    bindings_files = list(base_path.rglob("opslog*/bindings.csv"))
+    statements_files = list(base_path.rglob("*opslog/statements.csv"))
+    bindings_files = list(base_path.rglob("*opslog/bindings.csv"))
 
     if not statements_files:
-        print(f"WARNING: No statements files found for {project_name}. Skipping.")
+        print(f"WARNING: No statements files found for {project_name} in {base_path}. Skipping.")
         return
 
     if len(statements_files) > 1:
         print(f"Found {len(statements_files)} log dirs to merge.")
 
+    valid_statements_files = []
+    valid_bindings_files = []
+    for f in statements_files:
+        try:
+            pd.read_csv(f, nrows=1)  # Try reading first 5 rows to check for validity
+            valid_statements_files.append(f)
+        except Exception as e:
+            print(f"WARNING: Skipping invalid statements file {f}: {e}")
+    for f in bindings_files:
+        try:
+            pd.read_csv(f, nrows=1)  # Try reading first 5 rows to check for validity
+            valid_bindings_files.append(f)
+        except Exception as e:
+            print(f"WARNING: Skipping invalid bindings file {f}: {e}")
+    
+
     try:
-        df_statements = pd.concat((pd.read_csv(f) for f in statements_files), ignore_index=True)
-        df_bindings = pd.concat((pd.read_csv(f) for f in bindings_files), ignore_index=True)
+        df_statements = pd.concat((pd.read_csv(f) for f in valid_statements_files), ignore_index=True)
+        df_bindings = pd.concat((pd.read_csv(f) for f in valid_bindings_files), ignore_index=True)
     except Exception as e:
         print(f"Error reading CSV files for {project_name}: {e}")
         return
 
     output_dir = Path("/artifact/data/generated/opslog") / project_dir.split("/")[-1]
     output_dir.mkdir(parents=True, exist_ok=True)
-    df_statements.to_csv(output_dir / project_name / "statements.csv", index=False)
-    df_bindings.to_csv(output_dir / project_name / "bindings.csv", index=False)
+    df_statements.to_csv(output_dir / "statements.csv", index=False)
+    df_bindings.to_csv(output_dir / "bindings.csv", index=False)
 
 
 if __name__ == "__main__":
     projects = [
-        ("logs/opslog/oreilly-bank", "O'Reilly Bank"),
-        ("logs/opslog/escadatpc-c", "EscadaTPC-C"),
-        ("logs/opslog/java-design-patterns", "Java Design Patterns"),
-        ("logs/opslog/jdbc-course", "JDBC Course")
+        ("logs/opslog/oreilly-bank_run", "O'Reilly Bank"),
+        ("logs/opslog/escadatpc-c_run", "EscadaTPC-C"),
+        ("logs/opslog/java-design-patterns_run", "Java Design Patterns"),
+        ("logs/opslog/jdbc-course_run", "JDBC Course")
         # ("projects/opennms/opennms-run", "OpenNMS (no annotations)"),
         # ("projects/opennms/opennms-run-annos", "OpenNMS (annotated)"),
     ]
@@ -177,12 +193,16 @@ if __name__ == "__main__":
     for path, name in projects:
         collect_opslog(path, name)
 
-    project_paths = [p[0] for p in projects]
+    project_paths = ["/artifact/data/generated/opslog/" + p[0].split("/")[-1] for p in projects]
     summary_df = generate_summary(project_paths)
+
+
 
     # write to CSV
     summary_df.to_csv("/artifact/data/generated/summary.csv", index_label="project")
+    print("Wrote summary to /artifact/data/generated/summary.csv")
 
     # write cleaned CSVs for each project
     for p in project_paths:
         write_clean_logs(p, "/artifact/data/generated/projects")
+    print("Wrote cleaned logs to /artifact/data/generated/projects/")

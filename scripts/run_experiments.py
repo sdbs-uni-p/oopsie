@@ -68,12 +68,12 @@ def calculate_trimmed_average(values):
 if not os.path.exists(os.path.join("logs", "output")):
     os.makedirs(os.path.join("logs", "output"), exist_ok=True)
 
-    if REPORT:
-        # Delete old opslog if exists and create new
-        opslog_path = os.path.join("logs", "opslog")
-        if os.path.exists(opslog_path):
-            shutil.rmtree(opslog_path)
-        os.makedirs(opslog_path)
+if REPORT:
+    # Delete old opslog if exists and create new
+    opslog_path = os.path.join("logs", "opslog")
+    if os.path.exists(opslog_path):
+        shutil.rmtree(opslog_path)
+    os.makedirs(opslog_path)
 
 def run_experiments():
     base_dir = os.getcwd()
@@ -218,6 +218,6 @@ if __name__ == "__main__":
     run_experiments()
     if REPORT:
         # Generate result data (generate_results.py)
-        print("Experiments finished. Generating paper results...")
+        print("Experiments finished. Generating paper results...", flush=True)
         subprocess.run(["python3", "scripts/generate_results.py"], check=True)
 

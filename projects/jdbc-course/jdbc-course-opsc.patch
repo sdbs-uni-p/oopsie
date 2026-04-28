@@ -218,9 +218,9 @@ index 0000000..f18489a
 +
 +    // checker dependencies
 +    dependencies {
-+        compileOnly("io.github.eisop:checker-qual:3.42.0-eisop4")
-+        testCompileOnly("io.github.eisop:checker-qual:3.42.0-eisop4")
-+        checkerFramework("io.github.eisop:checker:3.42.0-eisop4")
++        compileOnly("io.github.eisop:checker-qual:3.49.5-eisop1")
++        testCompileOnly("io.github.eisop:checker-qual:3.49.5-eisop1")
++        checkerFramework("io.github.eisop:checker:3.49.5-eisop1")
 +
 +        compileOnly("io.github.eisop:opsc:0.0.1-SNAPSHOT")
 +        checkerFramework("io.github.eisop:opsc:0.0.1-SNAPSHOT")
@@ -233,7 +233,7 @@ index 0000000..f18489a
 +            eachDependency {
 +                if (requested.group == "org.checkerframework") {
 +                    // replace org.checkerframework with io.github.eisop
-+                    useTarget("io.github.eisop:${requested.name}:3.42.0-eisop4")
++                    useTarget("io.github.eisop:${requested.name}:3.49.5-eisop1")
 +                }
 +            }
 +        }

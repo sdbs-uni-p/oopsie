@@ -18,8 +18,8 @@ dependencies {
     checkerQual("io.github.eisop:checker-qual:3.49.5-eisop1")
     checkerFramework("io.github.eisop:checker:3.49.5-eisop1")
 
-    compileOnly("io.github.eisop:opsc:0.0.1-SNAPSHOT-java8")
-    checkerFramework("io.github.eisop:opsc:0.0.1-SNAPSHOT-java8")
+    compileOnly("io.github.eisop:opsc:0.0.1-SNAPSHOT")
+    checkerFramework("io.github.eisop:opsc:0.0.1-SNAPSHOT")
 
     implementation("org.hibernate:hibernate-core:3.6.10.Final")
     implementation("commons-codec:commons-codec:1.16.0")

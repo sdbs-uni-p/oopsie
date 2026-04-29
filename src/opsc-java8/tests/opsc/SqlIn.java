@@ -20,8 +20,8 @@ public class SqlIn {
     void inAnnotation() throws SQLException {
         // this should work
         @Sql(
-                in = {"DECIMAL"},
-                out = {"INTEGER", "DECIMAL", "VARCHAR"})
+                in = {"@NonNull DECIMAL"},
+                out = {"@NonNull INTEGER", "@NonNull DECIMAL", "@Nullable @MaxLength(40) VARCHAR"})
         PreparedStatement ps1 =
                 conn.prepareStatement(
                         "SELECT InvoiceId, Total, BillingCountry FROM Invoice WHERE Total > ?");
@@ -30,7 +30,7 @@ public class SqlIn {
     void wrongAnnotation() throws SQLException {
         @Sql(
                 in = {"VARCHAR"},
-                out = {"INTEGER", "DECIMAL", "VARCHAR"})
+                out = {"@NonNull INTEGER", "@NonNull DECIMAL", "@Nullable @MaxLength(40) VARCHAR"})
         PreparedStatement ps1 =
                 // :: error: (assignment.type.incompatible)
                 conn.prepareStatement(
@@ -70,10 +70,11 @@ public class SqlIn {
     }
 
     void constantValue() throws SQLException {
-        // :: warning: (determine.in.type.failed.first.try)
-        // :: warning: (determine.out.type.failed.first.try)
-        PreparedStatement ps = conn.prepareStatement("SELECT ?");
-
-        ps.setString(1, "A constant");
+        // Only works with Postgres
+//        // :: warning: (determine.in.type.failed.first.try)
+//        // :: warning: (determine.out.type.failed.first.try)
+//        PreparedStatement ps = conn.prepareStatement("SELECT ?");
+//
+//        ps.setString(1, "A constant");
     }
 }

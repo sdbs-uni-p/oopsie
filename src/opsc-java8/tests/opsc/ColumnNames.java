@@ -34,11 +34,9 @@ class ColumnNames {
         PreparedStatement ps = conn.prepareStatement("SELECT ?; SELECT * FROM Invoice");
         ResultSet rs = ps.executeQuery();
 
-        // [OPSC] FALSE POSITIVE
         // :: error: (column.name.not.found)
         int invoiceId = rs.getInt("InvoiceId"); // this should work
 
-        // [OPSC] FALSE POSITIVE (should be column.type.incompatible)
         // :: error: (column.name.not.found)
         int billingPostalCode = rs.getInt("BillingPostalCode"); // actually varchar
     }

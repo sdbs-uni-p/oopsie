@@ -1,5 +1,3 @@
-package tests;
-
 import io.github.eisop.opsc.OpsChecker;
 import java.io.File;
 import java.util.List;
@@ -13,16 +11,20 @@ public class OpscTest extends CheckerFrameworkPerDirectoryTest {
     private static final String DB_USER = "postgres";
     private static final String DB_PASSWORD = "postgres";
 
+    private static final String DB_URL_MYSQL = "jdbc:mysql://localhost:3307/Chinook?generateSimpleParameterMetadata=true";
+    private static final String DB_USER_MYSQL = "root";
+    private static final String DB_PASSWORD_MYSQL = "chinook";
+
     public OpscTest(List<File> testFiles) {
         // set checker options for db connection
         super(
                 testFiles,
                 OpsChecker.class,
                 "opsc",
-                "-AdbUrl=" + DB_URL,
-                "-AdbUser=" + DB_USER,
-                "-AdbPassword=" + DB_PASSWORD,
-                "-AenableSqlStringHeuristic=false",
+                "-AdbUrl=" + DB_URL_MYSQL,
+                "-AdbUser=" + DB_USER_MYSQL,
+                "-AdbPassword=" + DB_PASSWORD_MYSQL,
+                "-AenableSqlStringHeuristic=true",
                 "-AnonNullStringsConcatenation=true");
     }
 

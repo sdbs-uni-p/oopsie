@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 import javax.annotation.processing.ProcessingEnvironment;
 import javax.lang.model.element.ExecutableElement;
 import org.apache.commons.csv.CSVFormat;
@@ -27,7 +28,7 @@ public class TypeMapping {
         try {
             Reader reader =
                     new InputStreamReader(configFilePath.openStream(), StandardCharsets.UTF_8);
-            CSVFormat format = CSVFormat.DEFAULT.builder().setCommentMarker('#').get();
+            CSVFormat format = CSVFormat.DEFAULT.builder().setCommentMarker('#').build();
             records = format.parse(reader).getRecords();
         } catch (IOException e) {
             throw new TypeSystemError("Could not load type mapping configuration");
@@ -68,7 +69,7 @@ public class TypeMapping {
     protected List<ExecutableElement> getGetterByIndexMethods(ProcessingEnvironment processingEnv) {
         return getMethodNames.stream()
                 .map(name -> TreeUtils.getMethod("java.sql.ResultSet", name, processingEnv, "int"))
-                .toList();
+                .collect(Collectors.toList());
     }
 
     protected List<ExecutableElement> getGetterByNameMethods(ProcessingEnvironment processingEnv) {
@@ -80,6 +81,6 @@ public class TypeMapping {
                                         name,
                                         processingEnv,
                                         "java.lang.String"))
-                .toList();
+                .collect(Collectors.toList());
     }
 }

@@ -1,21 +1,24 @@
 package io.github.eisop.opsc;
 
+import org.checkerframework.checker.nullness.qual.NonNull;
+import org.checkerframework.checker.nullness.qual.Nullable;
+
 public class OpsCheckResult {
 
-    private final OpsCheckResultKind kind;
+    private final @NonNull OpsCheckResultKind kind;
 
-    private final String details;
+    private final @Nullable String details;
 
-    public OpsCheckResult(OpsCheckResultKind kind, String key) {
+    public OpsCheckResult(@NonNull OpsCheckResultKind kind, @Nullable String key) {
         this.kind = kind;
         this.details = key;
     }
 
-    public OpsCheckResultKind getKind() {
+    public @NonNull OpsCheckResultKind getKind() {
         return kind;
     }
 
-    public String getDetails() {
+    public @Nullable String getDetails() {
         return details;
     }
 }

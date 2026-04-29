@@ -6,13 +6,6 @@ import com.sun.source.tree.MethodInvocationTree;
 import io.github.eisop.opsc.log.OpsLogger;
 import io.github.eisop.opsc.qual.Sql;
 import io.github.eisop.opsc.qual.SqlUnsupported;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import javax.annotation.processing.ProcessingEnvironment;
-import javax.lang.model.element.AnnotationMirror;
-import javax.lang.model.element.ExecutableElement;
 import org.checkerframework.common.basetype.BaseTypeChecker;
 import org.checkerframework.common.basetype.BaseTypeVisitor;
 import org.checkerframework.common.value.ValueAnnotatedTypeFactory;
@@ -22,7 +15,16 @@ import org.checkerframework.framework.type.AnnotatedTypeMirror;
 import org.checkerframework.javacutil.AnnotationUtils;
 import org.checkerframework.javacutil.TreeUtils;
 import org.checkerframework.javacutil.TypeSystemError;
-import org.jspecify.annotations.Nullable;
+
+import javax.annotation.Nullable;
+import javax.annotation.processing.ProcessingEnvironment;
+import javax.lang.model.element.AnnotationMirror;
+import javax.lang.model.element.ExecutableElement;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Optional;
+import java.util.Set;
 
 public class OpsVisitor extends BaseTypeVisitor<OpsAnnotatedTypeFactory> {
 
@@ -115,15 +117,11 @@ public class OpsVisitor extends BaseTypeVisitor<OpsAnnotatedTypeFactory> {
 
         if (receiverType.hasAnnotation(Sql.class)) {
             AnnotationMirror sqlAnnotation = receiverType.getAnnotation(Sql.class);
-            if (sqlAnnotation == null) {
-                return;
-            }
-
             ExpressionTree indexTree = tree.getArguments().get(0);
             int literalIndex = retrieveIntValue(indexTree);
             if (literalIndex == -1) {
                 checker.reportError(tree, "parameter.index.cannot.be.determined");
-                logError(tree, "parameter.index.cannot.be.determined", "", sqlAnnotation);
+                logError(tree, "parameter.index.not.literal", "", sqlAnnotation);
             } else {
                 int psIndex = literalIndex - 1; // PreparedStatement parameters are 1-indexed
                 List<String> in =
@@ -139,10 +137,7 @@ public class OpsVisitor extends BaseTypeVisitor<OpsAnnotatedTypeFactory> {
                             sqlAnnotation);
                 } else {
                     checkParameterType(
-                            tree,
-                            method.getSimpleName().toString(),
-                            in.get(psIndex),
-                            sqlAnnotation);
+                            tree, method.getSimpleName().toString(), in.get(psIndex), sqlAnnotation);
                 }
             }
         }
@@ -159,8 +154,7 @@ public class OpsVisitor extends BaseTypeVisitor<OpsAnnotatedTypeFactory> {
             logError(
                     tree,
                     "parameter." + result.getDetails(),
-                    //                    "expected=" + methodName + ", actual=" + jdbcType,
-                    "SQL type=" + jdbcType + ", method=" + methodName,
+                    "expected=" + methodName + ", actual=" + jdbcType,
                     sqlAnnotation);
         } else if (result.getKind() == OpsCheckResultKind.WARNING) {
             checker.reportWarning(
@@ -168,14 +162,10 @@ public class OpsVisitor extends BaseTypeVisitor<OpsAnnotatedTypeFactory> {
             logWarning(
                     tree,
                     "parameter." + result.getDetails(),
-                    "SQL type=" + jdbcType + ", method=" + methodName,
+                    "expected=" + methodName + ", actual=" + jdbcType,
                     sqlAnnotation);
         } else {
-            logOk(
-                    tree,
-                    "parameter.set",
-                    "SQL type=" + jdbcType + ", method=" + methodName,
-                    sqlAnnotation);
+            logOk(tree, "parameter.set", sqlAnnotation);
         }
     }
 
@@ -193,10 +183,6 @@ public class OpsVisitor extends BaseTypeVisitor<OpsAnnotatedTypeFactory> {
 
         if (receiverType.hasAnnotation(Sql.class)) {
             AnnotationMirror sqlAnnotation = receiverType.getAnnotation(Sql.class);
-            if (sqlAnnotation == null) {
-                return;
-            }
-
             ExpressionTree indexTree = tree.getArguments().get(0);
             int literalIndex = retrieveIntValue(indexTree);
             if (literalIndex == -1) {
@@ -223,10 +209,6 @@ public class OpsVisitor extends BaseTypeVisitor<OpsAnnotatedTypeFactory> {
 
         if (receiverType.hasAnnotation(Sql.class)) {
             AnnotationMirror sqlAnnotation = receiverType.getAnnotation(Sql.class);
-            if (sqlAnnotation == null) {
-                return;
-            }
-
             ExpressionTree indexTree = tree.getArguments().get(0);
             AnnotationMirror stringValAnno = atypeFactory.getStringValAnnoMirror(indexTree);
             List<String> stringValues =
@@ -241,27 +223,29 @@ public class OpsVisitor extends BaseTypeVisitor<OpsAnnotatedTypeFactory> {
             String columnName = stringValues.get(0);
             List<String> out =
                     AnnotationUtils.getElementValueArray(
-                            sqlAnnotation, sqlOutElement, String.class, Collections.emptyList());
-            out.stream()
+                            sqlAnnotation,
+                            sqlOutElement,
+                            String.class,
+                            Collections.emptyList());
+
+            Optional<String> matchedColumn = out.stream()
                     .filter(annoColumnName -> columnNamesMatch(annoColumnName, columnName))
-                    .findFirst()
-                    .ifPresentOrElse(
-                            s -> {
-                                int index = out.indexOf(s);
-                                checkGetResult(
-                                        tree,
-                                        method.getSimpleName().toString(),
-                                        sqlAnnotation,
-                                        index);
-                            },
-                            () -> {
-                                checker.reportError(tree, "column.name.not.found", columnName);
-                                logError(
-                                        tree,
-                                        "column.name.not.found",
-                                        "name=" + columnName,
-                                        sqlAnnotation);
-                            });
+                    .findFirst();
+            if (matchedColumn.isPresent()) {
+                int index = out.indexOf(matchedColumn.get());
+                checkGetResult(
+                        tree,
+                        method.getSimpleName().toString(),
+                        sqlAnnotation,
+                        index);
+            } else {
+                checker.reportError(tree, "column.name.not.found", columnName);
+                logError(
+                        tree,
+                        "column.name.not.found",
+                        "name=" + columnName,
+                        sqlAnnotation);
+            }
         }
     }
 
@@ -287,9 +271,7 @@ public class OpsVisitor extends BaseTypeVisitor<OpsAnnotatedTypeFactory> {
                 logError(
                         tree,
                         "column." + result.getDetails(),
-                        //                        "expected=" + methodName + ", actual=" +
-                        // out.get(index),
-                        "SQL type=" + out.get(index) + ", method=" + methodName,
+                        "expected=" + methodName + ", actual=" + out.get(index),
                         sqlAnnotation);
             } else if (result.getKind() == OpsCheckResultKind.WARNING) {
                 checker.reportWarning(
@@ -301,16 +283,10 @@ public class OpsVisitor extends BaseTypeVisitor<OpsAnnotatedTypeFactory> {
                 logWarning(
                         tree,
                         "column." + result.getDetails(),
-                        //                        "expected=" + methodName + ", actual=" +
-                        // out.get(index),
-                        "SQL type=" + out.get(index) + ", method=" + methodName,
+                        "expected=" + methodName + ", actual=" + out.get(index),
                         sqlAnnotation);
             } else {
-                logOk(
-                        tree,
-                        "column.get",
-                        "SQL type=" + out.get(index) + ", method=" + methodName,
-                        sqlAnnotation);
+                logOk(tree, "column.get", sqlAnnotation);
             }
         }
     }
@@ -346,7 +322,10 @@ public class OpsVisitor extends BaseTypeVisitor<OpsAnnotatedTypeFactory> {
 
         List<Long> values =
                 AnnotationUtils.getElementValueArray(
-                        intValAnnoMirror, intValValueElement, Long.class, Collections.emptyList());
+                        intValAnnoMirror,
+                        intValValueElement,
+                        Long.class,
+                        Collections.emptyList());
 
         if (values.size() != 1) {
             return -1;
@@ -355,7 +334,7 @@ public class OpsVisitor extends BaseTypeVisitor<OpsAnnotatedTypeFactory> {
         return values.get(0).intValue();
     }
 
-    private @Nullable AnnotationMirror getIntValAnnoMirror(final ExpressionTree valueExp) {
+    private AnnotationMirror getIntValAnnoMirror(final ExpressionTree valueExp) {
         ValueAnnotatedTypeFactory valueAnnotatedTypeFactory =
                 getTypeFactory().getTypeFactoryOfSubchecker(ValueChecker.class);
         if (valueAnnotatedTypeFactory == null) {
@@ -389,16 +368,14 @@ public class OpsVisitor extends BaseTypeVisitor<OpsAnnotatedTypeFactory> {
                 message);
     }
 
-    private void logOk(
-            MethodInvocationTree tree, String key, String message, AnnotationMirror sql) {
+    private void logOk(MethodInvocationTree tree, String key, AnnotationMirror sql) {
         logger.ok(
                 root,
                 trees.getSourcePositions().getStartPosition(root, tree),
                 AnnotationUtils.getElementValue(sql, sqlFileElement, String.class, ""),
                 AnnotationUtils.getElementValue(sql, sqlLineElement, String.class, ""),
                 AnnotationUtils.getElementValue(sql, sqlColumnElement, String.class, ""),
-                key,
-                message);
+                key);
     }
 
     private void logNonlocal(MethodInvocationTree tree, String key, String details) {

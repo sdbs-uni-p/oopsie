@@ -21,9 +21,12 @@ public class OpsLogger implements Closeable {
     public OpsLogger(Path statementsPath, Path bindingsPath, String projectRoot)
             throws IOException {
         CSVFormat statementsCsvFormat =
-                CSVFormat.DEFAULT.builder().setHeader(OpsStatementLogEntry.STATEMENT_COLUMNS).get();
+                CSVFormat.DEFAULT
+                        .builder()
+                        .setHeader(OpsStatementLogEntry.STATEMENT_COLUMNS)
+                        .build();
         CSVFormat bindingsCsvFormat =
-                CSVFormat.DEFAULT.builder().setHeader(OpsBindingLogEntry.BINDING_COLUMNS).get();
+                CSVFormat.DEFAULT.builder().setHeader(OpsBindingLogEntry.BINDING_COLUMNS).build();
         statementsCsvPrinter =
                 new CSVPrinter(
                         Files.newBufferedWriter(statementsPath, StandardCharsets.UTF_8),
@@ -42,7 +45,7 @@ public class OpsLogger implements Closeable {
     }
 
     public void supportedStatement(
-            @Nullable CompilationUnitTree tree,
+            CompilationUnitTree tree,
             long start,
             String details,
             String statementString,
@@ -59,9 +62,9 @@ public class OpsLogger implements Closeable {
     }
 
     public void unsupportedPreparedStatement(
-            @Nullable CompilationUnitTree tree,
+            CompilationUnitTree tree,
             long location,
-            @Nullable String details,
+            String details,
             String statementString,
             boolean isPreparedStatement) {
         String sourceFileName = null;
@@ -153,8 +156,7 @@ public class OpsLogger implements Closeable {
             String statementFile,
             String statementLine,
             String statementColumn,
-            String key,
-            String details) {
+            String key) {
         entryRelatedToStatement(
                 OpsLogEntryKind.OK,
                 tree,
@@ -164,16 +166,16 @@ public class OpsLogger implements Closeable {
                 statementLine,
                 statementColumn,
                 key,
-                details);
+                null);
     }
 
     public void statementEntry(
             OpsLogEntryKind kind,
             @Nullable CompilationUnitTree tree,
             long location,
-            @Nullable String details,
-            @Nullable String statementString,
-            @Nullable Integer numberOfParameters,
+            String details,
+            String statementString,
+            Integer numberOfParameters,
             boolean isPreparedStatement) {
         String sourceFileName = null;
         String line = null;
@@ -199,7 +201,7 @@ public class OpsLogger implements Closeable {
             OpsLogEntryKind kind,
             @Nullable CompilationUnitTree tree,
             long location,
-            @Nullable String details,
+            String details,
             boolean isPreparedStatement) {
         statementEntry(kind, tree, location, details, null, null, isPreparedStatement);
     }

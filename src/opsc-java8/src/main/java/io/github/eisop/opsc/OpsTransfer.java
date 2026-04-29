@@ -4,6 +4,8 @@ import com.sun.source.tree.MethodInvocationTree;
 import io.github.eisop.opsc.qual.CreatesSqlStatement;
 import javax.lang.model.element.AnnotationMirror;
 import javax.lang.model.element.ExecutableElement;
+
+import org.checkerframework.checker.nullness.qual.Nullable;
 import org.checkerframework.dataflow.analysis.TransferInput;
 import org.checkerframework.dataflow.analysis.TransferResult;
 import org.checkerframework.dataflow.cfg.node.MethodInvocationNode;
@@ -12,7 +14,6 @@ import org.checkerframework.dataflow.expression.JavaExpression;
 import org.checkerframework.framework.flow.CFAbstractTransfer;
 import org.checkerframework.javacutil.TreeUtils;
 import org.checkerframework.javacutil.TypeSystemError;
-import org.jspecify.annotations.Nullable;
 
 /** The transfer function for OPSC. */
 public class OpsTransfer extends CFAbstractTransfer<OpsValue, OpsStore, OpsTransfer> {

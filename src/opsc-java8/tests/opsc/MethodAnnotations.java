@@ -15,14 +15,14 @@ class MethodAnnotations {
 
     public @Sql(
             in = {"TIMESTAMP"},
-            out = {"INTEGER", "DECIMAL", "VARCHAR"}) PreparedStatement getPreparedStatement()
-            throws SQLException {
+            out = {"@NonNull INTEGER", "@NonNull DECIMAL", "@Nullable @MaxLength(40) VARCHAR"})
+    PreparedStatement getPreparedStatement() throws SQLException {
         return conn.prepareStatement(
                 "SELECT InvoiceId, Total, BillingCountry FROM Invoice WHERE InvoiceDate > ?");
     }
 
-    public @Sql(out = {"INTEGER", "DECIMAL", "VARCHAR"}) ResultSet getResultSet()
-            throws SQLException {
+    public @Sql(out = {"@NonNull INTEGER", "@NonNull DECIMAL", "@Nullable @MaxLength(40) VARCHAR"})
+    ResultSet getResultSet() throws SQLException {
         return getPreparedStatement().executeQuery();
     }
 
@@ -38,8 +38,7 @@ class MethodAnnotations {
     }
 
     public void testGetAge() throws SQLException {
-        PreparedStatement ps =
-                conn.prepareStatement("SELECT Date '1990-01-01' AS dob, 'anotherColumn'");
+        PreparedStatement ps = conn.prepareStatement("SELECT Date '1990-01-01' AS dob, 'anotherColumn'");
         ResultSet rs = ps.executeQuery();
         int age = getAge(rs);
     }

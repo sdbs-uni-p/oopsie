@@ -7,14 +7,12 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
 import java.time.LocalDateTime;
-import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
-import org.jspecify.annotations.Nullable;
 
 /** Lightweight file logger for schema timing and DB access counters. */
 public class SchemaTimingLogger {
@@ -36,7 +34,7 @@ public class SchemaTimingLogger {
     }
 
     public void logMethodTiming(
-            String owner, String operation, long nanos, boolean success, @Nullable String details) {
+            String owner, String operation, long nanos, boolean success, String details) {
         log("METHOD", owner, operation, nanos, success, details);
     }
 
@@ -46,11 +44,11 @@ public class SchemaTimingLogger {
             String operation,
             long nanos,
             boolean success,
-            @Nullable String details) {
+            String details) {
         String key = owner + ":" + operation + ":" + eventType;
         long count = COUNTERS.computeIfAbsent(key, unused -> new AtomicLong(0)).incrementAndGet();
         double millis = nanos / 1_000_000.0;
-        String timestamp = LocalDateTime.now(ZoneId.systemDefault()).format(TIMESTAMP_FORMAT);
+        String timestamp = LocalDateTime.now().format(TIMESTAMP_FORMAT);
         String safeDetails = sanitize(details);
         String logFile = logFileForOwner(owner);
 
@@ -64,7 +62,7 @@ public class SchemaTimingLogger {
             boolean writeHeader = !Files.exists(path) || Files.size(path) == 0L;
             CSVFormat format =
                     writeHeader
-                            ? CSVFormat.DEFAULT.builder().setHeader(CSV_HEADER).get()
+                            ? CSVFormat.DEFAULT.builder().setHeader(CSV_HEADER).build()
                             : CSVFormat.DEFAULT;
 
             try (CSVPrinter printer =
@@ -76,14 +74,7 @@ public class SchemaTimingLogger {
                                     StandardOpenOption.APPEND),
                             format)) {
                 printer.printRecord(
-                        timestamp,
-                        eventType,
-                        owner,
-                        operation,
-                        count,
-                        millis,
-                        success,
-                        safeDetails);
+                        timestamp, eventType, owner, operation, count, millis, success, safeDetails);
                 printer.flush();
             }
         } catch (IOException e) {
@@ -101,7 +92,7 @@ public class SchemaTimingLogger {
         return "opslog/schema_timing_unknown.csv";
     }
 
-    private String sanitize(@Nullable String raw) {
+    private String sanitize(String raw) {
         if (raw == null) {
             return "";
         }

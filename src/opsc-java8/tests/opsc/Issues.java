@@ -11,9 +11,10 @@ class Issues {
                         "jdbc:postgresql://localhost:5432/chinook", "postgres", "postgres");
     }
 
-    void semicolon() throws SQLException {
-        PreparedStatement ps = conn.prepareStatement("SELECT * FROM Invoice WHERE Total > ?;");
-    }
+//    NOT IMPLEMENTED FOR JAVA 8
+//    void semicolon() throws SQLException {
+//        PreparedStatement ps = conn.prepareStatement("SELECT * FROM Invoice WHERE Total > ?;");
+//    }
 
     void overload() throws SQLException {
         @Sql PreparedStatement ps = conn.prepareStatement("SELECT * FROM Invoice");
@@ -22,12 +23,12 @@ class Issues {
         PreparedStatement ps2 =
                 conn.prepareStatement("SELECT * FROM Invoice", new String[] {"oluwa", "tikz"});
 
-        // should work but Calcite is calling the type "DECIMAL" instead of "NUMERIC"
-        // -> solved by workaround in type hierarchy
+        // TODO should work but Calcite is calling the type "DECIMAL" instead of "NUMERIC"
         @Sql(
                 in = {"NUMERIC"},
                 out = {"INTEGER"})
         PreparedStatement ps3 =
+                // :: error: (assignment.type.incompatible)
                 conn.prepareStatement("SELECT CustomerId FROM Invoice WHERE Total > ?", 1, 2, 3);
 
         @Sql(

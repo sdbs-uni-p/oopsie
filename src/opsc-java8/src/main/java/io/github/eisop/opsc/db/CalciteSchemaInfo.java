@@ -4,7 +4,7 @@ import static io.github.eisop.opsc.db.JDBCUtil.jdbcTypeNameFromOrdinal;
 
 import com.google.common.collect.ImmutableList;
 import io.github.eisop.opsc.exception.OpsDatabaseException;
-import io.github.eisop.opsc.log.SchemaTimingLogger;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -13,6 +13,8 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Properties;
 import javax.sql.DataSource;
+
+import io.github.eisop.opsc.log.SchemaTimingLogger;
 import org.apache.calcite.adapter.jdbc.JdbcSchema;
 import org.apache.calcite.avatica.util.Quoting;
 import org.apache.calcite.jdbc.CalciteConnection;
@@ -38,8 +40,8 @@ import org.apache.calcite.tools.Frameworks;
 import org.apache.calcite.tools.Planner;
 import org.apache.calcite.tools.RelConversionException;
 import org.apache.calcite.tools.ValidationException;
+import org.checkerframework.checker.nullness.qual.Nullable;
 import org.checkerframework.javacutil.TypeSystemError;
-import org.jspecify.annotations.Nullable;
 
 public class CalciteSchemaInfo implements SchemaInfo {
 
@@ -51,17 +53,13 @@ public class CalciteSchemaInfo implements SchemaInfo {
     private final SchemaPlus rootSchema;
     private final Connection calciteConnection;
 
-    SqlParser.Config parserConfig =
-            SqlParser.config()
-                    .withCaseSensitive(false)
-                    .withQuoting(Quoting.DOUBLE_QUOTE)
-                    .withConformance(SqlConformanceEnum.BABEL);
+    SqlParser.Config parserConfig = SqlParser.config()
+            .withCaseSensitive(false)
+            .withQuoting(Quoting.BACK_TICK) // MySQL-style quoting
+            .withConformance(SqlConformanceEnum.BABEL);
 
     public CalciteSchemaInfo(
-            String databaseUrl,
-            @Nullable String username,
-            @Nullable String password,
-            SchemaTimingLogger logger)
+            String databaseUrl, @Nullable String username, @Nullable String password, SchemaTimingLogger logger)
             throws OpsDatabaseException {
         long startTime = System.nanoTime();
 
@@ -72,12 +70,14 @@ public class CalciteSchemaInfo implements SchemaInfo {
         try {
             Class.forName("org.apache.calcite.jdbc.Driver");
             Class.forName("org.postgresql.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException e) {
-            throw new TypeSystemError("Could not load JDBC driver: %s", e.getMessage());
+            throw new TypeSystemError(e.getMessage());
         }
 
         try {
             testJdbcConnection(databaseUrl, username, password);
+            System.out.println("[CalciteSchemaInfo] JDBC connection to " + databaseUrl + " OK");
         } catch (SQLException e) {
             throw new OpsDatabaseException(e);
         }
@@ -88,11 +88,11 @@ public class CalciteSchemaInfo implements SchemaInfo {
             CalciteConnection conn = this.calciteConnection.unwrap(CalciteConnection.class);
             DataSource dataSource = JdbcSchema.dataSource(databaseUrl, null, username, password);
             rootSchema = conn.getRootSchema();
-            Schema subSchema =
-                    JdbcSchema.create(rootSchema, SUB_SCHEMA_NAME, dataSource, null, null);
+            Schema subSchema = JdbcSchema.create(rootSchema, SUB_SCHEMA_NAME, dataSource, null, null);
             rootSchema.add(SUB_SCHEMA_NAME, subSchema);
             long schemaSetupTime = System.nanoTime() - schemaSetupStart;
-            logger.logMethodTiming(CLASS_NAME, "schemaSetup", schemaSetupTime, true, databaseUrl);
+            logger.logMethodTiming(
+                    CLASS_NAME, "schemaSetup", schemaSetupTime, true, databaseUrl);
         } catch (SQLException e) {
             logger.logMethodTiming(
                     CLASS_NAME,
@@ -125,22 +125,131 @@ public class CalciteSchemaInfo implements SchemaInfo {
     @Override
     public ImmutableList<String> getResultTypeOf(String stmt) throws OpsDatabaseException {
         long startTime = System.nanoTime();
-        stmt = trimStatement(stmt);
-        ImmutableList<String> result = getTypesWithAnnotations(parseSql(stmt).getRowType());
-        long elapsedTime = System.nanoTime() - startTime;
-        logger.logMethodTiming(CLASS_NAME, "getResultTypeOf", elapsedTime, true, stmt);
-        return result;
+        try {
+            ImmutableList<String> result = getTypesWithAnnotations(parseSql(stmt).getRowType());
+            long elapsedTime = System.nanoTime() - startTime;
+            logger.logMethodTiming(
+                    CLASS_NAME, "getResultTypeOf", elapsedTime, true, stmt);
+            return result;
+        } catch (OpsDatabaseException e) {
+            logger.logMethodTiming(
+                    CLASS_NAME, "getResultTypeOf", System.nanoTime() - startTime, false, e.getMessage());
+            throw e;
+        }
+    }
+
+    @Override
+    public ImmutableList<String> getPlaceholderTypesOf(String stmt) throws OpsDatabaseException {
+        long startTime = System.nanoTime();
+        try {
+            RelNode tree = parseSql(stmt);
+
+            List<RexDynamicParam> params = new ArrayList<>();
+            tree.childrenAccept(
+                    new RelVisitor() {
+                        @Override
+                        public void visit(RelNode node, int ordinal, @Nullable RelNode parent) {
+                            if (node instanceof RexDynamicParam) {
+                                RexDynamicParam param = (RexDynamicParam) node;
+                                params.add(param);
+                            } else if (node instanceof Filter) {
+                                Filter filter = (Filter) node;
+                                filter.getCondition()
+                                        .accept(
+                                                new RexShuttle() {
+                                                    @Override
+                                                    public RexNode visitDynamicParam(
+                                                            RexDynamicParam dynamicParam) {
+                                                        params.add(dynamicParam);
+                                                        return dynamicParam;
+                                                    }
+                                                });
+
+                                // check for RexCalls (includes subqueries) in the filter condition
+                                if (filter.getCondition() instanceof RexSubQuery) {
+                                    RexSubQuery subQuery = (RexSubQuery) filter.getCondition();
+                                    visitSubQuery(subQuery);
+                                } else if (filter.getCondition() instanceof RexCall) {
+                                    RexCall call = (RexCall) filter.getCondition();
+                                    handleRexCall(call);
+                                }
+                            } else if (node instanceof LogicalProject) {
+                                LogicalProject project = (LogicalProject) node;
+                                RexUtil.apply(
+                                        new RexShuttle() {
+                                            @Override
+                                            public RexNode visitDynamicParam(
+                                                    RexDynamicParam dynamicParam) {
+                                                params.add(dynamicParam);
+                                                return dynamicParam;
+                                            }
+                                        },
+                                        project.getProjects().toArray(new RexNode[0]));
+
+                                // check for subqueries in the project expressions
+                                for (RexNode expr : project.getProjects()) {
+                                    if (expr instanceof RexSubQuery) {
+                                        RexSubQuery subQuery = (RexSubQuery) expr;
+                                        visitSubQuery(subQuery);
+                                    } else if (expr instanceof RexCall) {
+                                        RexCall call = (RexCall) expr;
+                                        handleRexCall(call);
+                                    }
+                                }
+
+                            } else if (node instanceof RexSubQuery) {
+                                RexSubQuery subQuery = (RexSubQuery) node;
+                                subQuery.rel.childrenAccept(this);
+                            } else if (node instanceof RexCall) {
+                                RexCall call = (RexCall) node;
+                                handleRexCall(call);
+                            }
+                            node.childrenAccept(this);
+                        }
+
+                        // recursive method to find and visit subqueries
+                        private void handleRexCall(RexCall call) {
+                            for (RexNode operand : call.getOperands()) {
+                                if (operand instanceof RexSubQuery) {
+                                    RexSubQuery subQuery = (RexSubQuery) operand;
+                                    subQuery.rel.childrenAccept(this);
+                                } else if (operand instanceof RexCall) {
+                                    RexCall subCall = (RexCall) operand;
+                                    handleRexCall(subCall);
+                                }
+                            }
+                        }
+
+                        private void visitSubQuery(RexSubQuery subQuery) {
+                            subQuery.rel.childrenAccept(this);
+                        }
+                    });
+
+            ImmutableList<String> result = params.stream()
+                    .sorted(Comparator.comparingInt(RexDynamicParam::getIndex))
+                    .map(param -> getJDBCTypeName(param.getType()))
+                    .collect(ImmutableList.toImmutableList());
+
+            long elapsedTime = System.nanoTime() - startTime;
+            logger.logMethodTiming(
+                    CLASS_NAME, "getPlaceholderTypesOf", elapsedTime, true, stmt);
+            return result;
+        } catch (OpsDatabaseException e) {
+            logger.logMethodTiming(
+                    CLASS_NAME,
+                    "getPlaceholderTypesOf",
+                    System.nanoTime() - startTime,
+                    false,
+                    e.getMessage());
+            throw e;
+        }
     }
 
     private RelNode parseSql(String stmt) throws OpsDatabaseException {
-        SchemaPlus subSchema = rootSchema.getSubSchema(SUB_SCHEMA_NAME);
-        if (subSchema == null) {
-            throw new OpsDatabaseException("Could not find sub-schema: " + SUB_SCHEMA_NAME);
-        }
         FrameworkConfig frameworkConfig =
                 Frameworks.newConfigBuilder()
                         .parserConfig(parserConfig)
-                        .defaultSchema(subSchema)
+                        .defaultSchema(rootSchema.getSubSchema(SUB_SCHEMA_NAME))
                         .build();
 
         RelNode tree;
@@ -154,102 +263,6 @@ public class CalciteSchemaInfo implements SchemaInfo {
         return tree;
     }
 
-    @Override
-    public ImmutableList<String> getPlaceholderTypesOf(String stmt) throws OpsDatabaseException {
-        long startTime = System.nanoTime();
-        stmt = trimStatement(stmt);
-        RelNode tree = parseSql(stmt);
-
-        List<RexDynamicParam> params = findDynamicParams(tree);
-        ImmutableList<String> result =
-                params.stream()
-                        .sorted(Comparator.comparingInt(RexDynamicParam::getIndex))
-                        .map(param -> getJDBCTypeName(param.getType()))
-                        .collect(ImmutableList.toImmutableList());
-
-        long elapsedTime = System.nanoTime() - startTime;
-        logger.logMethodTiming(CLASS_NAME, "getPlaceholderTypesOf", elapsedTime, true, stmt);
-        return result;
-    }
-
-    private List<RexDynamicParam> findDynamicParams(RelNode tree) {
-        List<RexDynamicParam> params = new ArrayList<>();
-        tree.childrenAccept(
-                new RelVisitor() {
-                    @Override
-                    public void visit(RelNode node, int ordinal, @Nullable RelNode parent) {
-                        if (node instanceof RexDynamicParam param) {
-                            params.add(param);
-                        } else if (node instanceof Filter filter) {
-                            filter.getCondition()
-                                    .accept(
-                                            new RexShuttle() {
-                                                @Override
-                                                public RexNode visitDynamicParam(
-                                                        RexDynamicParam dynamicParam) {
-                                                    params.add(dynamicParam);
-                                                    return dynamicParam;
-                                                }
-                                            });
-
-                            // check for RexCalls (includes subqueries) in the filter condition
-                            if (filter.getCondition() instanceof RexSubQuery subQuery) {
-                                visitSubQuery(subQuery);
-                            } else if (filter.getCondition() instanceof RexCall call) {
-                                handleRexCall(call);
-                            }
-                        } else if (node instanceof LogicalProject project) {
-                            RexUtil.apply(
-                                    new RexShuttle() {
-                                        @Override
-                                        public RexNode visitDynamicParam(
-                                                RexDynamicParam dynamicParam) {
-                                            params.add(dynamicParam);
-                                            return dynamicParam;
-                                        }
-                                    },
-                                    project.getProjects().toArray(new RexNode[0]));
-
-                            // check for subqueries in the project expressions
-                            for (RexNode expr : project.getProjects()) {
-                                if (expr instanceof RexSubQuery subQuery) {
-                                    visitSubQuery(subQuery);
-                                } else if (expr instanceof RexCall call) {
-                                    handleRexCall(call);
-                                }
-                            }
-                        } else if (node instanceof RexSubQuery subQuery) {
-                            subQuery.rel.childrenAccept(this);
-                        } else if (node instanceof RexCall call) {
-                            handleRexCall(call);
-                        }
-                        node.childrenAccept(this);
-                    }
-
-                    // recursive method to find and visit subqueries
-                    private void handleRexCall(RexCall call) {
-                        for (RexNode operand : call.getOperands()) {
-                            if (operand instanceof RexSubQuery subQuery) {
-                                subQuery.rel.childrenAccept(this);
-                            } else if (operand instanceof RexCall subCall) {
-                                handleRexCall(subCall);
-                            }
-                        }
-                    }
-
-                    private void visitSubQuery(RexSubQuery subQuery) {
-                        subQuery.rel.childrenAccept(this);
-                    }
-                });
-        return params;
-    }
-
-    private static String trimStatement(String stmt) {
-        // remove trailing semicolon (and any whitespace)
-        stmt = stmt.stripTrailing().replaceAll(";$", "");
-        return stmt;
-    }
-
     private ImmutableList<String> getTypesWithAnnotations(RelDataType relType) {
         return relType.getFieldList().stream()
                 .map(field -> getTypeWithAnnotations(field.getType(), field.getName()))
@@ -258,7 +271,8 @@ public class CalciteSchemaInfo implements SchemaInfo {
 
     private String getTypeWithAnnotations(RelDataType relType, String name) {
         String typeName = getJDBCTypeName(relType);
-        return typeName + " " + name;
+        name = name != null ? " " + name : "";
+        return typeName + name;
     }
 
     private static String getJDBCTypeName(RelDataType relType) {
@@ -268,7 +282,7 @@ public class CalciteSchemaInfo implements SchemaInfo {
     public void close() throws SQLException {
         long startTime = System.nanoTime();
         try {
-            if (!calciteConnection.isClosed()) {
+            if (calciteConnection != null && !calciteConnection.isClosed()) {
                 calciteConnection.close();
             }
             logger.logMethodTiming(

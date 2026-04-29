@@ -1,15 +1,13 @@
 plugins {
     id("java")
     // https://github.com/tbroyer/gradle-errorprone-plugin
-    id("net.ltgt.errorprone").version("4.2.0")
+//    id("net.ltgt.errorprone").version("4.0.1")
     id("maven-publish")
-    id("com.diffplug.spotless").version("7.0.4")
+//    id("com.diffplug.spotless").version("6.25.0")
     // https://docs.gradle.org/current/userguide/eclipse_plugin.html
     id("eclipse")
-    id("idea")
     // To show task list as a tree, run: ./gradlew <taskname> taskTree
-    id("com.dorongold.task-tree").version("4.0.1")
-    id("org.checkerframework").version("0.6.55")
+    id("com.dorongold.task-tree").version("4.0.0")
 }
 
 repositories {
@@ -19,10 +17,10 @@ repositories {
 
 apply plugin: "java"
 apply plugin: "eclipse"
-apply plugin: "net.ltgt.errorprone"
+//apply plugin: "net.ltgt.errorprone"
 
 group = "io.github.eisop"
-version = "0.0.1-SNAPSHOT"
+version = "0.0.1-SNAPSHOT-java8"
 
 ext.versions= [
     checkerFramework: "3.49.5-eisop1",
@@ -32,24 +30,25 @@ dependencies {
     implementation("io.github.eisop:checker-qual:${versions.checkerFramework}")
     compileOnly("io.github.eisop:checker:${versions.checkerFramework}")
 
-    compileOnly("io.github.eisop:checker-qual:${versions.checkerFramework}")
-    testCompileOnly("io.github.eisop:checker-qual:${versions.checkerFramework}")
-    checkerFramework("io.github.eisop:checker-qual:${versions.checkerFramework}")
-    checkerFramework("io.github.eisop:checker:${versions.checkerFramework}")
+    compileOnly("com.google.errorprone:javac:9+181-r4173-1")
 
     implementation("org.apache.calcite:calcite-core:1.37.0")
-    implementation("org.postgresql:postgresql:42.7.5")
+    implementation("org.postgresql:postgresql:42.7.3")
+    implementation("com.mysql:mysql-connector-j:8.2.0")
 
-    errorprone("com.google.errorprone:error_prone_core:2.38.0")
+//    errorprone("com.google.errorprone:error_prone_core:2.29.1")
 
-    implementation("com.google.guava:guava:33.4.8-jre")
-    implementation("org.apache.commons:commons-csv:1.14.0")
+    implementation("com.google.guava:guava:33.2.1-jre")
+    implementation("org.apache.commons:commons-csv:1.11.0")
 
     testImplementation("junit:junit:4.13.2")
     testImplementation("io.github.eisop:checker:${versions.checkerFramework}")
     testImplementation("io.github.eisop:framework-test:${versions.checkerFramework}")
+}
 
-    implementation("org.jspecify:jspecify:1.0.0")
+configurations.configureEach {
+    exclude group: 'org.checkerframework', module: 'checker-qual'
+    exclude group: 'org.checkerframework', module: 'checker'
 }
 
 sourceSets {
@@ -72,58 +71,27 @@ sourceSets {
 }
 
 java {
-    sourceCompatibility = 17
+    sourceCompatibility = 8
+    targetCompatibility = 8
 }
 
-tasks.withType(JavaCompile).all {
-    options.compilerArgs.addAll([
-        "-Werror",
-        "-Xlint:all,-processing"
-    ])
-    options.compilerArgs.addAll(
-            [
-                "api",
-                "code",
-                "comp",
-                "file",
-                "main",
-                "model",
-                "parser",
-                "processing",
-                "resources",
-                "tree",
-                "util",
-            ].collect { "--add-exports=jdk.compiler/com.sun.tools.javac.$it=ALL-UNNAMED" })
-}
-
-// EISOP Checker Framework pluggable type-checking
-
-apply plugin: 'org.checkerframework'
-
-dependencies {
-    compileOnly("io.github.eisop:checker-qual:${versions.checkerFramework}")
-    testCompileOnly("io.github.eisop:checker-qual:${versions.checkerFramework}")
-    checkerFramework("io.github.eisop:checker:${versions.checkerFramework}")
-
-    // dependency for Calcite, not sure why it's needed here
-    compileOnly("org.immutables:value:2.10.1")
-}
-
-checkerFramework {
-    checkers = [
-        'org.checkerframework.checker.nullness.NullnessChecker',
-    ]
-    extraJavacArgs = [
-        '-Werror',
-        '-AcheckPurityAnnotations',
-        '-ArequirePrefixInWarningSuppressions',
-        '-AwarnRedundantAnnotations',
-        '-AwarnUnneededSuppressions',
-        '-AnoJreVersionCheck',
-        '-Aversion'
-    ]
-}
-
+//tasks.withType(JavaCompile).all {
+//    options.compilerArgs.addAll(["-Werror", "-Xlint:all"])
+//    options.compilerArgs.addAll(
+//            [
+//                "api",
+//                "code",
+//                "comp",
+//                "file",
+//                "main",
+//                "model",
+//                "parser",
+//                "processing",
+//                "resources",
+//                "tree",
+//                "util",
+//            ].collect { "--add-exports=jdk.compiler/com.sun.tools.javac.$it=ALL-UNNAMED" })
+//}
 
 test {
     inputs.files("tests/opsc")
@@ -132,20 +100,20 @@ test {
 tasks.withType(Test) {
     jvmArgs(
             [
-                "code",
-                "comp",
-                "main",
-                "processing",
-                "tree",
-                "util"
+                    "code",
+                    "comp",
+                    "main",
+                    "processing",
+                    "tree",
+                    "util"
             ]
-            .collect { "--add-opens=jdk.compiler/com.sun.tools.javac.$it=ALL-UNNAMED" })
+                    .collect { "--add-opens=jdk.compiler/com.sun.tools.javac.$it=ALL-UNNAMED" })
 
     testLogging {
         showStackTraces = false
         showStandardStreams = true
         events "failed"
-        exceptionFormat = "full"
+        exceptionFormat "full"
     }
 }
 
@@ -173,33 +141,26 @@ eclipse.classpath {
     }
 }
 
-idea {
-    module {
-        downloadJavadoc = true
-        downloadSources = true
-    }
-}
-
-spotless {
-    java {
-        target("**/*.java")
-        googleJavaFormat().aosp()
-        formatAnnotations()
-    }
-
-    format "misc", {
-        target("*.md", "*.tex", ".gitignore", "Makefile")
-        leadingTabsToSpaces(2)
-        trimTrailingWhitespace()
-        // endWithNewline() // Don't want to end empty files with a newline
-    }
-
-    groovyGradle {
-        target("**/*.gradle")
-        greclipse()  // which formatter Spotless should use to format .gradle files.
-        leadingTabsToSpaces(4)
-        trimTrailingWhitespace()
-        // endWithNewline() // Don't want to end empty files with a newline
-    }
-}
+//spotless {
+//    java {
+//        target("**/*.java")
+//        googleJavaFormat().aosp()
+//        formatAnnotations()
+//    }
+//
+//    format "misc", {
+//        target("*.md", "*.tex", ".gitignore", "Makefile")
+//        indentWithSpaces(2)
+//        trimTrailingWhitespace()
+//        // endWithNewline() // Don't want to end empty files with a newline
+//    }
+//
+//    groovyGradle {
+//        target("**/*.gradle")
+//        greclipse()  // which formatter Spotless should use to format .gradle files.
+//        indentWithSpaces(4)
+//        trimTrailingWhitespace()
+//        // endWithNewline() // Don't want to end empty files with a newline
+//    }
+//}
 

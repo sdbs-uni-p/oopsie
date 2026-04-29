@@ -1,11 +1,24 @@
 package io.github.eisop.opsc;
 
 import com.google.common.base.Splitter;
+import java.util.Collections;
 import java.util.List;
-import org.checkerframework.dataflow.qual.Pure;
-import org.jspecify.annotations.Nullable;
+import java.util.Objects;
 
-public record OpscType(String columnDataType, @Nullable String columnName) {
+import org.checkerframework.checker.nullness.qual.NonNull;
+import org.checkerframework.checker.nullness.qual.Nullable;
+
+public final class OpscType {
+    @NonNull
+    private final String columnDataType;
+    @Nullable
+    private final String columnName;
+
+    public OpscType(
+            @NonNull String columnDataType, @Nullable String columnName) {
+        this.columnDataType = columnDataType;
+        this.columnName = columnName;
+    }
 
     /**
      * !FOR NOW, THE AT-SIGN ANNOTATIONS ARE IGNORED!
@@ -25,7 +38,7 @@ public record OpscType(String columnDataType, @Nullable String columnName) {
      */
     public static OpscType fromAnnotationString(String annotationString) {
         String columnDataType;
-        //        List<String> columnAnnotations;
+//        List<String> columnAnnotations;
         String columnName;
 
         List<String> tokens = Splitter.on(' ').splitToList(annotationString);
@@ -36,22 +49,21 @@ public record OpscType(String columnDataType, @Nullable String columnName) {
 
         if (tokens.size() == 1) {
             columnDataType = tokens.get(0);
-            //            columnAnnotations = Collections.emptyList();
+//            columnAnnotations = Collections.emptyList();
             columnName = null;
         } else if (tokens.get(tokens.size() - 2).startsWith("@")) {
             columnDataType = tokens.get(tokens.size() - 1);
-            //            columnAnnotations = tokens.subList(0, tokens.size() - 1);
+//            columnAnnotations = tokens.subList(0, tokens.size() - 1);
             columnName = null;
         } else {
             columnDataType = tokens.get(tokens.size() - 2);
-            //            columnAnnotations = tokens.subList(0, tokens.size() - 2);
+//            columnAnnotations = tokens.subList(0, tokens.size() - 2);
             columnName = tokens.get(tokens.size() - 1);
         }
 
         return new OpscType(columnDataType, columnName);
     }
 
-    @Pure
     public boolean dataTypeMatches(OpscType other) {
         if (columnDataType.equals(other.columnDataType)) {
             return true;
@@ -61,10 +73,11 @@ public record OpscType(String columnDataType, @Nullable String columnName) {
     }
 
     @Override
-    public boolean equals(@Nullable Object obj) {
-        if (!(obj instanceof OpscType other)) {
+    public boolean equals(Object obj) {
+        if (!(obj instanceof OpscType)) {
             return false;
         }
+        OpscType other = (OpscType) obj;
         if (this == obj) {
             return true;
         }
@@ -78,16 +91,26 @@ public record OpscType(String columnDataType, @Nullable String columnName) {
                 && columnName.equalsIgnoreCase(other.columnName);
     }
 
-    @Pure
     public boolean equalsIgnoringName(OpscType other) {
         return dataTypeMatches(other);
     }
 
     @Override
     public String toString() {
+        String annotationString = columnDataType;
         if (columnName != null) {
-            return columnDataType + " " + columnName;
+            annotationString = annotationString + " " + columnName;
         }
+        return annotationString;
+    }
+
+    @NonNull
+    public String columnDataType() {
         return columnDataType;
+    }
+
+    @Nullable
+    public String columnName() {
+        return columnName;
     }
 }

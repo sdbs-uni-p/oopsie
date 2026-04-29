@@ -10,16 +10,30 @@ from datetime import datetime
 
 PROJECTS_DIR = os.path.join(os.getcwd(), "projects")
 
+# Number of runs per script
+NUM_RUNS = int(sys.argv[1]) if len(sys.argv) > 1 else 5
+REPORT = NUM_RUNS == 1
 
-SUBDIRS = [
-    "oreilly-bank",
-    "escadatpc-c",
-    "java-design-patterns",
-    "jdbc-course",
-    # "opennms",
-    # "opsc-tests",
-    # "opsc-tests-skipcf",
-]
+if REPORT:
+    SUBDIRS = [
+        "handwritten",
+        "oreilly-bank",
+        "escadatpc-c",
+        "java-design-patterns",
+        "jdbc-course",
+        # "opennms",
+    ]
+else:
+    SUBDIRS = [
+        "handwritten",
+        "oreilly-bank",
+        "escadatpc-c",
+        "java-design-patterns",
+        "jdbc-course",
+        # "opennms",
+        # "opsc-tests",
+        # "opsc-tests-skipcf",
+    ]
 
 # Map folder names to "8" or "17" (default is 17)
 PROJECT_JAVA_VERSIONS = {
@@ -32,10 +46,6 @@ JAVA_PATHS = {
     "8": "/usr/lib/jvm/java-8-openjdk-amd64",
     "17": "/usr/lib/jvm/java-17-openjdk-amd64"
 }
-
-# Number of runs per script
-NUM_RUNS = int(sys.argv[1]) if len(sys.argv) > 1 else 5
-REPORT = NUM_RUNS == 1
 
 # --- Helper Functions ---
 

@@ -8,4 +8,4 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - ./Chinook_Postgresql_schema.sql:/docker-entrypoint-initdb.d/Chinook_Postgresql_schema.sql
+      - ${DB_MOUNT_PATH}/Chinook_Postgresql_schema.sql:/docker-entrypoint-initdb.d/Chinook_Postgresql_schema.sql

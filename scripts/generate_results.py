@@ -182,6 +182,7 @@ def collect_opslog(project_dir, project_name):
 
 if __name__ == "__main__":
     projects = [
+        ("logs/opslog/handwritten_run", "Handwritten"),
         ("logs/opslog/oreilly-bank_run", "O'Reilly Bank"),
         ("logs/opslog/escadatpc-c_run", "EscadaTPC-C"),
         ("logs/opslog/java-design-patterns_run", "Java Design Patterns"),
@@ -196,7 +197,29 @@ if __name__ == "__main__":
     project_paths = ["/artifact/data/generated/opslog/" + p[0].split("/")[-1] for p in projects]
     summary_df = generate_summary(project_paths)
 
+    # Select and rename columns
+    columns = {
+        'project': 'Project',
+        'SUPPORTED_PREPARED_STATEMENT': 'Supported Statements',
+        'isRegularStatement': 'Dynamic Statements',
+        'isPreparedStatement': 'Prepared Statements',
+        'SUPPORTED_STATEMENT': 'Well-formed Statements',
+        'UNSUPPORTED_STATEMENT': 'Unsupported Statements',
+        'max_parameters': 'Max Parameters',
+        'max_statement_length': 'Max Statement Length',
+        'bType:COLUMN': 'Getters',
+        'bType:PARAMETER': 'Setters',
+        'OK': 'Negatives',
+        'ERROR': 'Positives',
+        'bType:NONLOCAL': 'Out of scope getters/setters'
+    }
 
+    summary_df = summary_df.filter(items=columns.keys()).rename(columns=columns)
+
+    # rename first column according to projects
+    # e.g. "oreilly-bank_run" -> "O'Reilly Bank"
+    project_name_mapping = {p[0].split("/")[-1]: p[1] for p in projects}
+    summary_df.index = summary_df.index.map(project_name_mapping)
 
     # write to CSV
     summary_df.to_csv("/artifact/data/generated/summary.csv", index_label="project")

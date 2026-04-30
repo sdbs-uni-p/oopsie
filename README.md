@@ -1,4 +1,4 @@
-# Oopsie 🫢🫣🫪
+# Oopsie 🫢🫣
 
 Artifacts for the VLDB 2027 submission "Static Type Checking for Database Access Code"
 

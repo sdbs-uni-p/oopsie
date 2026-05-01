@@ -14,7 +14,7 @@ index 00000000000..8304845be6d
 +      POSTGRES_PASSWORD: opennms
 +      POSTGRES_DB: opennms
 +    volumes:
-+      - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql
++      - ${DB_MOUNT_PATH}/schema.sql:/docker-entrypoint-initdb.d/schema.sql
 diff --git a/opennms-webapp/pom.xml b/opennms-webapp/pom.xml
 index 96100d3c218..bb4ba070352 100644
 --- a/opennms-webapp/pom.xml

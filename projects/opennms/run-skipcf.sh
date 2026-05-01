@@ -5,9 +5,9 @@ cd $scriptDir
 
 cd opennms-nocf
 
-# assemble
-echo "Assembling project with ./compile.pl..."
-./compile.pl -DskipTests=true --projects :opennms-webapp -am install
+# # assemble
+# echo "Assembling project with ./compile.pl..."
+# ./compile.pl -DskipTests=true --projects :opennms-webapp -am install
 
 echo "Running mvn clean..."
 mvn clean > /dev/null

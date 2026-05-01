@@ -47,7 +47,7 @@ Expected run time: [???]
 
 > [!NOTE]
 > For OpenNMS, additional project dependencies will be compiled before the module to be checked is compiled (displayed as `Running prerun.sh`). This should take around ??? minutes.
-> OSCAR has the longest compilation time, around ??? minutes.
+> OSCAR, which consists of a Maven project and a Gradle project, has the longest compilation time at around ??? minutes.
 
 #### Results
 

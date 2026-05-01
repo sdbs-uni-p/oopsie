@@ -25,21 +25,18 @@ if REPORT:
     ]
 else:
     SUBDIRS = [
-        "handwritten",
-        "oreilly-bank",
-        "escadatpc-c",
-        "java-design-patterns",
-        "jdbc-course",
+        # "handwritten",
+        # "oreilly-bank",
+        # "escadatpc-c",
+        # "java-design-patterns",
+        # "jdbc-course",
         # "opennms",
-        # "opsc-tests",
-        # "opsc-tests-skipcf",
+        "oscar",
     ]
 
 # Map folder names to "8" or "17" (default is 17)
 PROJECT_JAVA_VERSIONS = {
-    "oscar-annotated": "8",
-    "oscar-noannos": "8",
-    "oscar-nochecker": "8",
+    "oscar": "8"
 }
 
 JAVA_PATHS = {

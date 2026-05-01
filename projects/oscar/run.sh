@@ -26,7 +26,7 @@ cd oscar-noannos
 REL_PATH=$(realpath --relative-to="/artifact" "$(pwd)")
 
 # Combine Host Root + Relative Path + DB
-export DB_MOUNT_PATH="$HOST_PROJECT_ROOT/$REL_PATH/db"
+export DB_MOUNT_PATH="$HOST_PROJECT_ROOT/$REL_PATH/database"
 
 echo "Mounting Host Path: $DB_MOUNT_PATH"
 # ------------------------------------
@@ -47,7 +47,7 @@ echo "Starting compilation..."
 startTime=$(date +%s%3N)
 
 # db subproject
-./gradlew assemble
+./gradlew assemble --no-daemon
 # main subproject
 mvn -Dmaven.test.skip=true -Dcheckstyle.skip=true -Dpmd.skip=true package
 

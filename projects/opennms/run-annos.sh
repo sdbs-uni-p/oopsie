@@ -21,9 +21,9 @@ cd $scriptDir
 
 cd opennms-annos
 
-# assemble
-echo "Assembling project with ./compile.pl..."
-./compile.pl -DskipTests=true --projects :opennms-webapp -am install
+# # assemble
+# echo "Assembling project with ./compile.pl..."
+# ./compile.pl -DskipTests=true --projects :opennms-webapp -am install
 
 # --- FIX: Calculate the Host Path ---
 # 1. Get the path relative to the container root (/artifact)
@@ -31,7 +31,7 @@ echo "Assembling project with ./compile.pl..."
 #    We want: opsc/opennms
 REL_PATH=$(realpath --relative-to="/artifact" "$(pwd)")
 
-# 2. Combine Host Root + Relative Path + db
+# 2. Combine Host Root + Relative Path
 export DB_MOUNT_PATH="$HOST_PROJECT_ROOT/$REL_PATH"
 
 echo "Host Project Root: $HOST_PROJECT_ROOT"

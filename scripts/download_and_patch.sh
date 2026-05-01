@@ -169,7 +169,7 @@ else
 fi
 
 # Set up the derivative repositories securely
-for variant in oscar-noannos oscar-annos; do
+for variant in oscar-noannos oscar-annos oscar-value oscar-nocf; do
     if [ ! -d "$variant" ]; then
         echo "Copying base repository to $variant..."
         cp -r oscar-base "$variant"
@@ -191,6 +191,16 @@ cd ..
 cd oscar-annos
 echo "Applying patch (annotations)..."
 git apply --whitespace=nowarn ../oscar-annotated.patch
+cd ../..
+
+cd oscar-value
+echo "Applying patch (Value Checker)..."
+git apply --whitespace=nowarn ../oscar-value.patch
+cd ..
+
+cd oscar-nocf
+echo "Applying patch (no CF)..."
+git apply --whitespace=nowarn ../oscar-nocf.patch
 cd ../..
 
 echo "All projects downloaded and patched successfully."

@@ -1,0 +1,6 @@
+project,Supported Statements,Dynamic Statements,Prepared Statements,Max Parameters,Max Statement Length,Getters,Setters,Negatives,Positives,Out of scope getters/setters
+Handwritten,45,2,43,4,99,18,53,40,31,0
+O'Reilly Bank,11,0,14,9,146,16,31,47,0,1
+EscadaTPC-C,46,4,51,21,268,72,190,232,30,0
+Java Design Patterns,26,14,25,5,80,14,41,44,11,21
+JDBC Course,13,12,5,3,57,9,14,21,2,0

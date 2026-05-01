@@ -186,9 +186,11 @@ if __name__ == "__main__":
         ("logs/opslog/oreilly-bank_run", "O'Reilly Bank"),
         ("logs/opslog/escadatpc-c_run", "EscadaTPC-C"),
         ("logs/opslog/java-design-patterns_run", "Java Design Patterns"),
-        ("logs/opslog/jdbc-course_run", "JDBC Course")
-        # ("projects/opennms/opennms-run", "OpenNMS (no annotations)"),
-        # ("projects/opennms/opennms-run-annos", "OpenNMS (annotated)"),
+        ("logs/opslog/jdbc-course_run", "JDBC Course"),
+        ("logs/opslog/opennms_run", "OpenNMS (no annotations)"),
+        ("logs/opslog/opennms_run-annos", "OpenNMS (annotated)"),
+        ("logs/opslog/oscar_run", "Oscar (no annotations)"),
+        ("logs/opslog/oscar_run-annos", "Oscar (annotated)")
     ]
 
     for path, name in projects:

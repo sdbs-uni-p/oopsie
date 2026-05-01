@@ -191,7 +191,7 @@ cd ..
 cd oscar-annos
 echo "Applying patch (annotations)..."
 git apply --whitespace=nowarn ../oscar-annotated.patch
-cd ../..
+cd ..
 
 cd oscar-value
 echo "Applying patch (Value Checker)..."

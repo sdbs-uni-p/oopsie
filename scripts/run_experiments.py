@@ -21,7 +21,8 @@ if REPORT:
         "escadatpc-c",
         "java-design-patterns",
         "jdbc-course",
-        # "opennms",
+        "opennms",
+        "oscar"
     ]
 else:
     SUBDIRS = [
@@ -30,8 +31,8 @@ else:
         # "escadatpc-c",
         # "java-design-patterns",
         # "jdbc-course",
-        # "opennms",
-        "oscar",
+        "opennms",
+        # "oscar",
     ]
 
 # Map folder names to "8" or "17" (default is 17)
@@ -149,7 +150,11 @@ def run_experiments():
                 continue
 
             # In report mode, we only need runs with OPSC
-            if REPORT and "skipcf" in script_name or "value" in script_name:
+            if REPORT and ("skipcf" in script_name or "nocf" in script_name or "value" in script_name):
+                continue
+
+            # In performance mode, skip manual annotation runs
+            if not REPORT and ("-annos" in script_name or "-annotated" in script_name):
                 continue
 
             script_path = os.path.join(project_path, script_name)
@@ -222,9 +227,15 @@ def run_experiments():
             print("-" * 40)
 
 if __name__ == "__main__":
+    if REPORT:
+        print("Running experiments in REPORT mode (1 run per script, generating paper results)...", flush=True)
+    else:
+        print(f"Running experiments in PERFORMANCE mode ({NUM_RUNS} runs per script, no paper results)...", flush=True)
     run_experiments()
     if REPORT:
         # Generate result data (generate_results.py)
         print("Experiments finished. Generating paper results...", flush=True)
         subprocess.run(["python3", "scripts/generate_results.py"], check=True)
+    else:
+        print("Experiments finished.")
 

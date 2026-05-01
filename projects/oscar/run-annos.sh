@@ -39,7 +39,7 @@ echo "Running docker-compose up..."
 docker compose up -d --wait
 
 echo "Running ./gradlew clean and mvn clean..."
-./gradlew clean > /dev/null
+./gradlew clean --no-daemon > /dev/null
 mvn clean > /dev/null
 
 echo "Starting compilation..."

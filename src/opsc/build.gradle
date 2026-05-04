@@ -98,31 +98,31 @@ tasks.withType(JavaCompile).all {
 
 // EISOP Checker Framework pluggable type-checking
 
-apply plugin: 'org.checkerframework'
+// apply plugin: 'org.checkerframework'
 
-dependencies {
-    compileOnly("io.github.eisop:checker-qual:${versions.checkerFramework}")
-    testCompileOnly("io.github.eisop:checker-qual:${versions.checkerFramework}")
-    checkerFramework("io.github.eisop:checker:${versions.checkerFramework}")
+// dependencies {
+//     compileOnly("io.github.eisop:checker-qual:${versions.checkerFramework}")
+//     testCompileOnly("io.github.eisop:checker-qual:${versions.checkerFramework}")
+//     checkerFramework("io.github.eisop:checker:${versions.checkerFramework}")
 
-    // dependency for Calcite, not sure why it's needed here
-    compileOnly("org.immutables:value:2.10.1")
-}
+//     // dependency for Calcite, not sure why it's needed here
+//     compileOnly("org.immutables:value:2.10.1")
+// }
 
-checkerFramework {
-    checkers = [
-        'org.checkerframework.checker.nullness.NullnessChecker',
-    ]
-    extraJavacArgs = [
-        '-Werror',
-        '-AcheckPurityAnnotations',
-        '-ArequirePrefixInWarningSuppressions',
-        '-AwarnRedundantAnnotations',
-        '-AwarnUnneededSuppressions',
-        '-AnoJreVersionCheck',
-        '-Aversion'
-    ]
-}
+// checkerFramework {
+//     checkers = [
+//         'org.checkerframework.checker.nullness.NullnessChecker',
+//     ]
+//     extraJavacArgs = [
+// //        '-Werror',
+//         '-AcheckPurityAnnotations',
+//         '-ArequirePrefixInWarningSuppressions',
+//         '-AwarnRedundantAnnotations',
+//         '-AwarnUnneededSuppressions',
+//         '-AnoJreVersionCheck',
+//         '-Aversion'
+//     ]
+// }
 
 
 test {

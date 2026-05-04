@@ -2,8 +2,6 @@
 
 Artifacts for the VLDB 2027 submission "Static Type Checking for Database Access Code"
 
-Under construction 🏗️
-
 ## Overview
 
 This repository contains the source code of the _Oopsie_ checker (under its former name "OPSC") and the artifacts to reproduce the results of the paper's experiments.
@@ -36,6 +34,7 @@ For the remaining projects (java-design-pattern, JDBC-Course, OSCAR, OpenNMS and
 
 ### Requirements
 
+* macOS/Linux (Windows to be supported soon)
 * Docker, Docker Compose
 
 ### Main experiment
@@ -48,7 +47,7 @@ This experiment compiles all projects with the _Oopsie_ checker once (ad-hoc ana
 ./start_main.sh
 ```
 
-Estimated run time: 2–3 hours
+Estimated run time: ~1 hour
 
 #### Steps
 
@@ -80,4 +79,4 @@ Trimmed averages (i.e. averages of the five runs after removing the minimum and 
 ./start_performance.sh
 ```
 
-Estimated run time: 3–4 hours
+Estimated run time: ~3–4 hours

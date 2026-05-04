@@ -31,9 +31,9 @@ export DB_MOUNT_PATH="$HOST_PROJECT_ROOT/$REL_PATH/database"
 echo "Mounting Host Path: $DB_MOUNT_PATH"
 # ------------------------------------
 
-# In build.gradle.kts, replace {{{opslogdir}}} with --opslogdir option
+# In build.gradle.kts and pom.xml, replace {{{opslogdir}}} with --opslogdir option
 sed -i "s|{{{opslogdir}}}|$OPSLOGDIR|g" build.gradle.kts
-
+sed -i "s|{{{opslogdir}}}|$OPSLOGDIR|g" pom.xml
 
 echo "Running docker-compose up..."
 docker compose up -d --wait

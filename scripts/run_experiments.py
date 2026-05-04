@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import os
+import glob
 import subprocess
 import re
 import sys
@@ -32,7 +33,7 @@ else:
         # "java-design-patterns",
         # "jdbc-course",
         "opennms",
-        # "oscar",
+        "oscar",
     ]
 
 # Map folder names to "8" or "17" (default is 17)
@@ -40,9 +41,18 @@ PROJECT_JAVA_VERSIONS = {
     "oscar": "8"
 }
 
+# Find the java paths dynamically
+java17_paths = glob.glob("/usr/lib/jvm/java-17-openjdk-*")
+java8_paths = glob.glob("/usr/lib/jvm/java-8-openjdk-*")
+
+if not java17_paths:
+    print("Error: Could not find Java 17!")
+if not java8_paths:
+    print("Error: Could not find Java 8!")
+
 JAVA_PATHS = {
-    "8": "/usr/lib/jvm/java-8-openjdk-amd64",
-    "17": "/usr/lib/jvm/java-17-openjdk-amd64"
+    "8": java8_paths[0],
+    "17": java17_paths[0]
 }
 
 # --- Helper Functions ---
@@ -122,12 +132,7 @@ def run_experiments():
                     text=True,
                     check=False
                 )
-                if result.returncode != 0:
-                    print(f"  prerun.sh failed with exit code {result.returncode}")
-                    print(result.stdout)
-                    print(result.stderr)
-                    continue
-                print("  prerun.sh completed successfully.")
+
                 log_file = os.path.join("logs", "output", f"{project_dir}_prerun.log")
                 with open(log_file, "w") as f:
                     f.write(f"=== Date/Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ===\n")
@@ -136,6 +141,9 @@ def run_experiments():
                     f.write(result.stdout)
                     f.write("\n\n--- STDERR ---\n")
                     f.write(result.stderr)
+
+                if result.returncode == 0:
+                    print(f"  prerun.sh completed successfully.")
 
             except Exception as e:
                 print(f"  prerun.sh failed with error: {e}")

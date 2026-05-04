@@ -49,23 +49,6 @@ else
 fi
 echo "Applying patch (no annotations)..."
 git apply --whitespace=nowarn ../java-design-patterns-opsc.patch
-cd ..
-
-# --- Annotations ---
-if [ ! -d "java-design-patterns-annos" ]; then
-    echo "Downloading java-design-patterns (annotations)..."
-    git clone https://github.com/iluwatar/java-design-patterns.git java-design-patterns-annos
-    cd java-design-patterns-annos
-    git checkout 163c3017bb356937d876cd9a05905c012f3b0af6
-else
-    echo "java-design-patterns-annos already exists. Resetting..."
-    cd java-design-patterns-annos
-    git reset --hard HEAD
-    git clean -fdx
-    git checkout 163c3017bb356937d876cd9a05905c012f3b0af6
-fi
-echo "Applying patch (annotations)..."
-git apply --whitespace=nowarn ../java-design-patterns-annotated.patch
 cd ../..
 
 

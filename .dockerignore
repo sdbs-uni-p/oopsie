@@ -1,5 +1,0 @@
-projects/*
-!projects/**/*.patch
-!projects/**/*.sh
-!projects/handwritten
-!projects/oreilly-bank

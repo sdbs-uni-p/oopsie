@@ -42,20 +42,11 @@ RUN echo '#!/bin/bash' > /usr/local/bin/ulimit && \
 
 # Copy artifact files
 WORKDIR /artifact
+COPY . /artifact
 
-# Only patches, as filtered by .dockerignore
-COPY projects/ ./projects/
-
-COPY scripts/ ./scripts/
-
+WORKDIR /artifact
 
 # Make scripts executable
 RUN chmod +x scripts/*.py
 RUN chmod +x scripts/*.sh
 
-# Prepare project repositories
-RUN ./scripts/download_and_patch.sh
-
-COPY src/ ./src/
-
-WORKDIR /artifact

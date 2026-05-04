@@ -20,8 +20,8 @@ cat << "EOF"
 EOF
 echo -e "${NC}"
 
-#echo "Downloading and patching projects..."
-#bash scripts/download_and_patch.sh
+echo "Downloading and patching projects..."
+bash scripts/download_and_patch.sh
 
 echo "Building the reproducibility environment..."
 docker build -t opsc-artifact .

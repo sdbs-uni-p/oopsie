@@ -1,0 +1,1003 @@
+kind,bindingFile,bindingLine,bindingColumn,statementFile,statementLine,statementColumn,key,details
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/PMmodule/dao/GenericIntakeDAO.java,274,25,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/PMmodule/dao/GenericIntakeDAO.java,273.0,48.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/PMmodule/dao/GenericIntakeDAO.java,275,25,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/PMmodule/dao/GenericIntakeDAO.java,273.0,48.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/PMmodule/dao/GenericIntakeDAO.java,276,25,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/PMmodule/dao/GenericIntakeDAO.java,273.0,48.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/PMmodule/dao/GenericIntakeDAO.java,279,45,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/PMmodule/dao/GenericIntakeDAO.java,273.0,48.0,column.get,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/PMmodule/dao/GenericIntakeNodeDAO.java,128,25,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/PMmodule/dao/GenericIntakeNodeDAO.java,126.0,48.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/PMmodule/dao/GenericIntakeNodeDAO.java,131,45,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/PMmodule/dao/GenericIntakeNodeDAO.java,126.0,48.0,column.get,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/PMmodule/dao/GenericIntakeNodeDAO.java,150,25,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/PMmodule/dao/GenericIntakeNodeDAO.java,148.0,48.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/PMmodule/dao/GenericIntakeNodeDAO.java,153,45,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/PMmodule/dao/GenericIntakeNodeDAO.java,148.0,48.0,column.get,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/casemgmt/dao/CaseManagementNoteDAO.java,656,17,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/casemgmt/dao/CaseManagementNoteDAO.java,655.0,40.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/casemgmt/dao/CaseManagementNoteDAO.java,657,17,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/casemgmt/dao/CaseManagementNoteDAO.java,655.0,40.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/casemgmt/dao/CaseManagementNoteDAO.java,658,17,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/casemgmt/dao/CaseManagementNoteDAO.java,655.0,40.0,parameter.set,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/casemgmt/dao/CaseManagementNoteDAO.java,664,21,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/casemgmt/dao/CaseManagementNoteDAO.java,655.0,40.0,column.incompatibleTypes,"expected=getInt, actual=BIGINT EXPR$0"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/casemgmt/dao/CaseManagementNoteDAO.java,695,25,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/casemgmt/dao/CaseManagementNoteDAO.java,694.0,30.0,parameter.incompatibleTypes,"expected=setString, actual=INTEGER"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/casemgmt/dao/CaseManagementNoteDAO.java,696,25,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/casemgmt/dao/CaseManagementNoteDAO.java,694.0,30.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/casemgmt/dao/CaseManagementNoteDAO.java,697,25,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/casemgmt/dao/CaseManagementNoteDAO.java,694.0,30.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/casemgmt/dao/CaseManagementNoteDAO.java,698,25,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/casemgmt/dao/CaseManagementNoteDAO.java,694.0,30.0,parameter.set,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/casemgmt/dao/CaseManagementNoteDAO.java,704,29,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/casemgmt/dao/CaseManagementNoteDAO.java,694.0,30.0,column.incompatibleTypes,"expected=getInt, actual=BIGINT EXPR$0"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/DemographicDao.java,362,25,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/DemographicDao.java,361.0,48.0,parameter.set,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/DemographicDao.java,366,45,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/DemographicDao.java,361.0,48.0,column.incompatibleTypes,"expected=getInt, actual=BIGINT CLIENT_ID"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/DemographicDao.java,1041,25,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/DemographicDao.java,1040.0,48.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/DemographicDao.java,1045,37,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/DemographicDao.java,1040.0,48.0,column.get,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/DemographicDao.java,1046,53,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/DemographicDao.java,1040.0,48.0,column.get,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/DemographicDao.java,1062,25,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/DemographicDao.java,1061.0,48.0,parameter.incompatibleTypes,"expected=setString, actual=TIMESTAMP"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/DemographicDao.java,1066,45,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/DemographicDao.java,1061.0,48.0,column.incompatibleTypes,"expected=getInt, actual=VARCHAR CONTENTID"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/PopulationReportDao.java,213,13,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/PopulationReportDao.java,212.0,18.0,parameter.set,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/PopulationReportDao.java,214,13,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/PopulationReportDao.java,212.0,18.0,parameter.incompatibleTypes,"expected=setInt, actual=VARCHAR"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/PopulationReportDao.java,215,13,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/PopulationReportDao.java,212.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/PopulationReportDao.java,216,13,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/PopulationReportDao.java,212.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/PopulationReportDao.java,217,13,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/PopulationReportDao.java,212.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/PopulationReportDao.java,222,29,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/PopulationReportDao.java,212.0,18.0,column.get,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/PopulationReportDao.java,222,43,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/PopulationReportDao.java,212.0,18.0,column.incompatibleTypes,"expected=getInt, actual=BIGINT EXPR$1"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/PopulationReportDao.java,268,13,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/PopulationReportDao.java,267.0,18.0,parameter.set,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/PopulationReportDao.java,269,13,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/PopulationReportDao.java,267.0,18.0,parameter.incompatibleTypes,"expected=setInt, actual=VARCHAR"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/PopulationReportDao.java,270,13,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/PopulationReportDao.java,267.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/PopulationReportDao.java,271,13,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/PopulationReportDao.java,267.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/PopulationReportDao.java,272,13,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/PopulationReportDao.java,267.0,18.0,parameter.set,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/PopulationReportDao.java,277,20,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/PopulationReportDao.java,267.0,18.0,column.incompatibleTypes,"expected=getInt, actual=BIGINT EXPR$0"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,73,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,71.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,74,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,71.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,75,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,71.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,76,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,71.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,77,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,71.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,78,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,71.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,79,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,71.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,80,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,71.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,81,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,71.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,82,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,71.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,83,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,71.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,84,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,71.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,85,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,71.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,86,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,71.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,87,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,71.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,88,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,71.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,89,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,71.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,90,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,71.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,91,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,71.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,92,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,71.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,93,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,71.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,94,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,71.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,95,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,71.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,96,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,71.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,97,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,71.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,98,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,71.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,99,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,71.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,100,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,71.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,159,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,156.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,160,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,156.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,161,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,156.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,162,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,156.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,163,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,156.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,164,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,156.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,165,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,156.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,166,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,156.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,167,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,156.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,168,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,156.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,169,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,156.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,170,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,156.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,172,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,156.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,173,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,156.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,174,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,156.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,175,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,156.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,176,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,156.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,177,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,156.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,178,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,156.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,179,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,156.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,180,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,156.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,181,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,156.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,182,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,156.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,183,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,156.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,184,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,156.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,185,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,156.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,186,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,156.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,187,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,156.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,188,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,156.0,18.0,parameter.set,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,251,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,250.0,18.0,parameter.incompatibleTypes,"expected=setString, actual=INTEGER"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,302,17,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,301.0,22.0,parameter.incompatibleTypes,"expected=setString, actual=INTEGER"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,390,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,391,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,393,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.set,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,394,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setDate, actual=VARCHAR"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,395,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.set,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,396,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setInt, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,397,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setInt, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,398,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setInt, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,399,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setInt, actual=VARCHAR"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,400,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.set,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,401,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setDouble, actual=VARCHAR"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,402,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.set,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,403,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setDouble, actual=VARCHAR"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,404,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.set,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,405,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setDouble, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,406,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setDouble, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,407,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setDouble, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,408,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setDouble, actual=VARCHAR"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,409,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.set,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,410,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,411,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,412,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,413,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,414,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,415,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,416,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,417,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.set,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,418,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,419,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,420,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,421,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,422,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,423,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,424,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,425,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,426,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,427,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,428,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,429,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,430,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.set,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,431,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setInt, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,432,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setInt, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,433,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setInt, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,434,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setInt, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,435,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setInt, actual=VARCHAR"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,436,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,437,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,438,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,439,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.set,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,440,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,441,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,442,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,443,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,444,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,445,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,446,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,447,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,448,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,449,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.set,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,450,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,451,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,452,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.set,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,453,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,454,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,455,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.set,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,456,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,457,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,458,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.set,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,459,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,460,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,461,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.set,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,462,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,463,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,464,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.set,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,465,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,466,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,467,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.set,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,468,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,469,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,470,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.set,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,471,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,472,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,473,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.set,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,474,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,475,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,476,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.set,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,477,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setInt, actual=VARCHAR"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,478,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.set,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,479,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setDate, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,480,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setDate, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,481,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setDate, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,482,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setDate, actual=VARCHAR"
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,483,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,387.0,18.0,parameter.incompatibleTypes,"expected=setBoolean, actual=VARCHAR"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,531,25,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,530.0,30.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,532,25,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,530.0,30.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,571,25,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,570.0,30.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,577,59,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,570.0,30.0,column.get,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,831,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,830.0,21.0,parameter.set,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,1024,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,1023.0,19.0,parameter.set,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,1025,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,1023.0,19.0,parameter.incompatibleTypes,"expected=setString, actual=INTEGER"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,1192,28,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,1188.0,22.0,column.get,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/RecommitDAO.java,74,54,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/RecommitDAO.java,68.0,26.0,column.get,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/RecommitDAO.java,79,50,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/RecommitDAO.java,68.0,26.0,column.get,
+ERROR,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/data/DxReference.java,78,13,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/data/DxReference.java,77.0,39.0,parameter.incompatibleTypes,"expected=setString, actual=INTEGER"
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/data/DxReference.java,82,32,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/data/DxReference.java,77.0,39.0,column.get,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/data/DxReference.java,84,25,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/data/DxReference.java,77.0,39.0,column.get,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/data/DxReference.java,85,25,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/data/DxReference.java,77.0,39.0,column.get,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/data/DxReference.java,86,25,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/data/DxReference.java,77.0,39.0,column.get,
+OK,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarSecurity/CRHelper.java,91,33,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarSecurity/CRHelper.java,90.0,37.0,parameter.set,
+ERROR,/database/mysql/dbUpdate.java,77,45,/database/mysql/dbUpdate.java,70.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER NOTE_ID"
+ERROR,/database/mysql/dbUpdate.java,87,91,/database/mysql/dbUpdate.java,85.0,30.0,column.incompatibleTypes,"expected=getString, actual=TIMESTAMP UPDATE_DATE"
+ERROR,/database/mysql/dbUpdate.java,87,144,/database/mysql/dbUpdate.java,85.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER NOTE_ID"
+OK,/database/mysql/image_blob_migration/ImageStringToBlob.java,75,41,/database/mysql/image_blob_migration/ImageStringToBlob.java,70.0,49.0,column.get,
+OK,/database/mysql/image_blob_migration/ImageStringToBlob.java,85,33,/database/mysql/image_blob_migration/ImageStringToBlob.java,81.0,31.0,parameter.set,
+OK,/database/mysql/image_blob_migration/ImageStringToBlob.java,88,61,/database/mysql/image_blob_migration/ImageStringToBlob.java,81.0,31.0,column.get,
+OK,/database/mysql/image_blob_migration/ImageStringToBlob.java,114,17,/database/mysql/image_blob_migration/ImageStringToBlob.java,113.0,41.0,parameter.set,
+OK,/database/mysql/image_blob_migration/ImageStringToBlob.java,115,17,/database/mysql/image_blob_migration/ImageStringToBlob.java,113.0,41.0,parameter.set,
+OK,/database/mysql/importCPP.java,55,29,/database/mysql/importCPP.java,49.0,51.0,parameter.set,
+ERROR,/database/mysql/importCPP.java,68,49,/database/mysql/importCPP.java,49.0,51.0,column.incompatibleTypes,"expected=getLong, actual=INTEGER ISSUE_ID"
+OK,/database/mysql/importCPP.java,59,33,/database/mysql/importCPP.java,50.0,52.0,parameter.set,
+OK,/database/mysql/importCPP.java,60,33,/database/mysql/importCPP.java,50.0,52.0,parameter.set,
+ERROR,/database/mysql/importCPP.java,90,45,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getInt, actual=BIGINT CLIENT_ID"
+ERROR,/database/mysql/importCPP.java,97,47,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getString, actual=BIGINT CLIENT_ID"
+ERROR,/database/mysql/importCPP.java,98,47,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getString, actual=BIGINT CLIENT_ID"
+ERROR,/database/mysql/importCPP.java,103,90,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getString, actual=BIGINT CLIENT_ID"
+ERROR,/database/mysql/importCPP.java,104,56,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getString, actual=BIGINT CLIENT_ID"
+ERROR,/database/mysql/importCPP.java,108,60,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getString, actual=BIGINT CLIENT_ID"
+ERROR,/database/mysql/importCPP.java,110,58,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getInt, actual=BIGINT PROGRAM_ID"
+ERROR,/database/mysql/importCPP.java,122,56,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getString, actual=BIGINT CLIENT_ID"
+ERROR,/database/mysql/importCPP.java,125,56,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getString, actual=BIGINT PROGRAM_ID"
+ERROR,/database/mysql/importCPP.java,140,86,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getString, actual=BIGINT CLIENT_ID"
+ERROR,/database/mysql/importCPP.java,141,56,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getString, actual=BIGINT CLIENT_ID"
+ERROR,/database/mysql/importCPP.java,145,60,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getString, actual=BIGINT CLIENT_ID"
+ERROR,/database/mysql/importCPP.java,147,58,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getInt, actual=BIGINT PROGRAM_ID"
+ERROR,/database/mysql/importCPP.java,159,56,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getString, actual=BIGINT CLIENT_ID"
+ERROR,/database/mysql/importCPP.java,162,56,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getString, actual=BIGINT PROGRAM_ID"
+ERROR,/database/mysql/importCPP.java,178,91,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getString, actual=BIGINT CLIENT_ID"
+ERROR,/database/mysql/importCPP.java,179,56,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getString, actual=BIGINT CLIENT_ID"
+ERROR,/database/mysql/importCPP.java,183,60,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getString, actual=BIGINT CLIENT_ID"
+ERROR,/database/mysql/importCPP.java,185,58,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getInt, actual=BIGINT PROGRAM_ID"
+ERROR,/database/mysql/importCPP.java,197,56,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getString, actual=BIGINT CLIENT_ID"
+ERROR,/database/mysql/importCPP.java,200,56,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getString, actual=BIGINT PROGRAM_ID"
+ERROR,/database/mysql/importCPP.java,217,92,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getString, actual=BIGINT CLIENT_ID"
+ERROR,/database/mysql/importCPP.java,218,56,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getString, actual=BIGINT CLIENT_ID"
+ERROR,/database/mysql/importCPP.java,222,60,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getString, actual=BIGINT CLIENT_ID"
+ERROR,/database/mysql/importCPP.java,224,58,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getInt, actual=BIGINT PROGRAM_ID"
+ERROR,/database/mysql/importCPP.java,236,56,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getString, actual=BIGINT CLIENT_ID"
+ERROR,/database/mysql/importCPP.java,239,56,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getString, actual=BIGINT PROGRAM_ID"
+ERROR,/database/mysql/importCPP.java,255,85,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getString, actual=BIGINT CLIENT_ID"
+ERROR,/database/mysql/importCPP.java,256,56,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getString, actual=BIGINT CLIENT_ID"
+ERROR,/database/mysql/importCPP.java,260,60,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getString, actual=BIGINT CLIENT_ID"
+ERROR,/database/mysql/importCPP.java,262,58,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getInt, actual=BIGINT PROGRAM_ID"
+ERROR,/database/mysql/importCPP.java,274,56,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getString, actual=BIGINT CLIENT_ID"
+ERROR,/database/mysql/importCPP.java,277,56,/database/mysql/importCPP.java,77.0,30.0,column.incompatibleTypes,"expected=getString, actual=BIGINT PROGRAM_ID"
+OK,/database/mysql/importCPP.java,97,29,/database/mysql/importCPP.java,78.0,33.0,parameter.set,
+OK,/database/mysql/importCPP.java,98,29,/database/mysql/importCPP.java,78.0,33.0,parameter.set,
+OK,/database/mysql/importCPP.java,101,46,/database/mysql/importCPP.java,78.0,33.0,column.get,
+OK,/database/mysql/importCPP.java,121,59,/database/mysql/importCPP.java,78.0,33.0,column.get,
+OK,/database/mysql/importCPP.java,123,56,/database/mysql/importCPP.java,78.0,33.0,column.get,
+OK,/database/mysql/importCPP.java,128,59,/database/mysql/importCPP.java,78.0,33.0,column.get,
+OK,/database/mysql/importCPP.java,138,39,/database/mysql/importCPP.java,78.0,33.0,column.get,
+OK,/database/mysql/importCPP.java,158,59,/database/mysql/importCPP.java,78.0,33.0,column.get,
+OK,/database/mysql/importCPP.java,160,56,/database/mysql/importCPP.java,78.0,33.0,column.get,
+OK,/database/mysql/importCPP.java,165,59,/database/mysql/importCPP.java,78.0,33.0,column.get,
+OK,/database/mysql/importCPP.java,176,39,/database/mysql/importCPP.java,78.0,33.0,column.get,
+OK,/database/mysql/importCPP.java,196,59,/database/mysql/importCPP.java,78.0,33.0,column.get,
+OK,/database/mysql/importCPP.java,198,56,/database/mysql/importCPP.java,78.0,33.0,column.get,
+OK,/database/mysql/importCPP.java,203,59,/database/mysql/importCPP.java,78.0,33.0,column.get,
+OK,/database/mysql/importCPP.java,215,39,/database/mysql/importCPP.java,78.0,33.0,column.get,
+OK,/database/mysql/importCPP.java,235,59,/database/mysql/importCPP.java,78.0,33.0,column.get,
+OK,/database/mysql/importCPP.java,237,56,/database/mysql/importCPP.java,78.0,33.0,column.get,
+OK,/database/mysql/importCPP.java,242,59,/database/mysql/importCPP.java,78.0,33.0,column.get,
+OK,/database/mysql/importCPP.java,253,39,/database/mysql/importCPP.java,78.0,33.0,column.get,
+OK,/database/mysql/importCPP.java,273,59,/database/mysql/importCPP.java,78.0,33.0,column.get,
+OK,/database/mysql/importCPP.java,275,56,/database/mysql/importCPP.java,78.0,33.0,column.get,
+OK,/database/mysql/importCPP.java,280,59,/database/mysql/importCPP.java,78.0,33.0,column.get,
+ERROR,/database/mysql/importCPP.java,104,37,/database/mysql/importCPP.java,79.0,52.0,parameter.incompatibleTypes,"expected=setString, actual=INTEGER"
+ERROR,/database/mysql/importCPP.java,105,37,/database/mysql/importCPP.java,79.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=INTEGER"
+ERROR,/database/mysql/importCPP.java,118,52,/database/mysql/importCPP.java,79.0,52.0,column.incompatibleTypes,"expected=getLong, actual=INTEGER ID"
+ERROR,/database/mysql/importCPP.java,141,37,/database/mysql/importCPP.java,79.0,52.0,parameter.incompatibleTypes,"expected=setString, actual=INTEGER"
+ERROR,/database/mysql/importCPP.java,142,37,/database/mysql/importCPP.java,79.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=INTEGER"
+ERROR,/database/mysql/importCPP.java,155,52,/database/mysql/importCPP.java,79.0,52.0,column.incompatibleTypes,"expected=getLong, actual=INTEGER ID"
+ERROR,/database/mysql/importCPP.java,179,37,/database/mysql/importCPP.java,79.0,52.0,parameter.incompatibleTypes,"expected=setString, actual=INTEGER"
+ERROR,/database/mysql/importCPP.java,180,37,/database/mysql/importCPP.java,79.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=INTEGER"
+ERROR,/database/mysql/importCPP.java,193,52,/database/mysql/importCPP.java,79.0,52.0,column.incompatibleTypes,"expected=getLong, actual=INTEGER ID"
+ERROR,/database/mysql/importCPP.java,218,37,/database/mysql/importCPP.java,79.0,52.0,parameter.incompatibleTypes,"expected=setString, actual=INTEGER"
+ERROR,/database/mysql/importCPP.java,219,37,/database/mysql/importCPP.java,79.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=INTEGER"
+ERROR,/database/mysql/importCPP.java,232,52,/database/mysql/importCPP.java,79.0,52.0,column.incompatibleTypes,"expected=getLong, actual=INTEGER ID"
+ERROR,/database/mysql/importCPP.java,256,37,/database/mysql/importCPP.java,79.0,52.0,parameter.incompatibleTypes,"expected=setString, actual=INTEGER"
+ERROR,/database/mysql/importCPP.java,257,37,/database/mysql/importCPP.java,79.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=INTEGER"
+ERROR,/database/mysql/importCPP.java,270,52,/database/mysql/importCPP.java,79.0,52.0,column.incompatibleTypes,"expected=getLong, actual=INTEGER ID"
+OK,/database/mysql/importCPP.java,108,41,/database/mysql/importCPP.java,80.0,52.0,parameter.set,
+ERROR,/database/mysql/importCPP.java,109,41,/database/mysql/importCPP.java,80.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=VARCHAR"
+ERROR,/database/mysql/importCPP.java,110,41,/database/mysql/importCPP.java,80.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=VARCHAR"
+OK,/database/mysql/importCPP.java,145,41,/database/mysql/importCPP.java,80.0,52.0,parameter.set,
+ERROR,/database/mysql/importCPP.java,146,41,/database/mysql/importCPP.java,80.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=VARCHAR"
+ERROR,/database/mysql/importCPP.java,147,41,/database/mysql/importCPP.java,80.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=VARCHAR"
+OK,/database/mysql/importCPP.java,183,41,/database/mysql/importCPP.java,80.0,52.0,parameter.set,
+ERROR,/database/mysql/importCPP.java,184,41,/database/mysql/importCPP.java,80.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=VARCHAR"
+ERROR,/database/mysql/importCPP.java,185,41,/database/mysql/importCPP.java,80.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=VARCHAR"
+OK,/database/mysql/importCPP.java,222,41,/database/mysql/importCPP.java,80.0,52.0,parameter.set,
+ERROR,/database/mysql/importCPP.java,223,41,/database/mysql/importCPP.java,80.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=VARCHAR"
+ERROR,/database/mysql/importCPP.java,224,41,/database/mysql/importCPP.java,80.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=VARCHAR"
+OK,/database/mysql/importCPP.java,260,41,/database/mysql/importCPP.java,80.0,52.0,parameter.set,
+ERROR,/database/mysql/importCPP.java,261,41,/database/mysql/importCPP.java,80.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=VARCHAR"
+ERROR,/database/mysql/importCPP.java,262,41,/database/mysql/importCPP.java,80.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=VARCHAR"
+OK,/database/mysql/importCPP.java,121,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+ERROR,/database/mysql/importCPP.java,122,37,/database/mysql/importCPP.java,81.0,52.0,parameter.incompatibleTypes,"expected=setString, actual=INTEGER"
+OK,/database/mysql/importCPP.java,123,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+OK,/database/mysql/importCPP.java,124,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+OK,/database/mysql/importCPP.java,125,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+OK,/database/mysql/importCPP.java,126,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+OK,/database/mysql/importCPP.java,127,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+OK,/database/mysql/importCPP.java,128,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+OK,/database/mysql/importCPP.java,158,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+ERROR,/database/mysql/importCPP.java,159,37,/database/mysql/importCPP.java,81.0,52.0,parameter.incompatibleTypes,"expected=setString, actual=INTEGER"
+OK,/database/mysql/importCPP.java,160,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+OK,/database/mysql/importCPP.java,161,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+OK,/database/mysql/importCPP.java,162,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+OK,/database/mysql/importCPP.java,163,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+OK,/database/mysql/importCPP.java,164,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+OK,/database/mysql/importCPP.java,165,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+OK,/database/mysql/importCPP.java,196,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+ERROR,/database/mysql/importCPP.java,197,37,/database/mysql/importCPP.java,81.0,52.0,parameter.incompatibleTypes,"expected=setString, actual=INTEGER"
+OK,/database/mysql/importCPP.java,198,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+OK,/database/mysql/importCPP.java,199,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+OK,/database/mysql/importCPP.java,200,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+OK,/database/mysql/importCPP.java,201,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+OK,/database/mysql/importCPP.java,202,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+OK,/database/mysql/importCPP.java,203,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+OK,/database/mysql/importCPP.java,235,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+ERROR,/database/mysql/importCPP.java,236,37,/database/mysql/importCPP.java,81.0,52.0,parameter.incompatibleTypes,"expected=setString, actual=INTEGER"
+OK,/database/mysql/importCPP.java,237,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+OK,/database/mysql/importCPP.java,238,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+OK,/database/mysql/importCPP.java,239,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+OK,/database/mysql/importCPP.java,240,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+OK,/database/mysql/importCPP.java,241,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+OK,/database/mysql/importCPP.java,242,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+OK,/database/mysql/importCPP.java,273,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+ERROR,/database/mysql/importCPP.java,274,37,/database/mysql/importCPP.java,81.0,52.0,parameter.incompatibleTypes,"expected=setString, actual=INTEGER"
+OK,/database/mysql/importCPP.java,275,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+OK,/database/mysql/importCPP.java,276,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+OK,/database/mysql/importCPP.java,277,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+OK,/database/mysql/importCPP.java,278,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+OK,/database/mysql/importCPP.java,279,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+OK,/database/mysql/importCPP.java,280,37,/database/mysql/importCPP.java,81.0,52.0,parameter.set,
+ERROR,/database/mysql/importCPP.java,132,37,/database/mysql/importCPP.java,84.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=INTEGER"
+ERROR,/database/mysql/importCPP.java,133,37,/database/mysql/importCPP.java,84.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=INTEGER"
+ERROR,/database/mysql/importCPP.java,169,37,/database/mysql/importCPP.java,84.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=INTEGER"
+ERROR,/database/mysql/importCPP.java,170,37,/database/mysql/importCPP.java,84.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=INTEGER"
+ERROR,/database/mysql/importCPP.java,207,37,/database/mysql/importCPP.java,84.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=INTEGER"
+ERROR,/database/mysql/importCPP.java,208,37,/database/mysql/importCPP.java,84.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=INTEGER"
+ERROR,/database/mysql/importCPP.java,246,37,/database/mysql/importCPP.java,84.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=INTEGER"
+ERROR,/database/mysql/importCPP.java,247,37,/database/mysql/importCPP.java,84.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=INTEGER"
+ERROR,/database/mysql/importCPP.java,284,37,/database/mysql/importCPP.java,84.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=INTEGER"
+ERROR,/database/mysql/importCPP.java,285,37,/database/mysql/importCPP.java,84.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=INTEGER"
+ERROR,/database/mysql/importCasemgmt.java,104,41,/database/mysql/importCasemgmt.java,86.0,31.0,column.incompatibleTypes,"expected=getString, actual=INTEGER ID"
+OK,/database/mysql/importCasemgmt.java,128,41,/database/mysql/importCasemgmt.java,125.0,30.0,column.get,
+OK,/database/mysql/importCasemgmt.java,154,29,/database/mysql/importCasemgmt.java,151.0,52.0,parameter.set,
+ERROR,/database/mysql/importCasemgmt.java,198,33,/database/mysql/importCasemgmt.java,187.0,60.0,parameter.incompatibleTypes,"expected=setInt, actual=BIGINT"
+ERROR,/database/mysql/importCasemgmt.java,199,33,/database/mysql/importCasemgmt.java,187.0,60.0,parameter.incompatibleTypes,"expected=setInt, actual=BIGINT"
+OK,/database/mysql/importCasemgmt.java,223,45,/database/mysql/importCasemgmt.java,218.0,30.0,column.get,
+OK,/database/mysql/importCasemgmt.java,226,50,/database/mysql/importCasemgmt.java,218.0,30.0,column.get,
+OK,/database/mysql/importCasemgmt.java,227,53,/database/mysql/importCasemgmt.java,218.0,30.0,column.get,
+OK,/database/mysql/importCasemgmt.java,228,51,/database/mysql/importCasemgmt.java,218.0,30.0,column.get,
+ERROR,/database/mysql/importCasemgmt.java,231,97,/database/mysql/importCasemgmt.java,218.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER DEMOGRAPHIC_NO"
+ERROR,/database/mysql/importCasemgmt.java,239,50,/database/mysql/importCasemgmt.java,218.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER DEMOGRAPHIC_NO"
+ERROR,/database/mysql/importCasemgmt.java,223,29,/database/mysql/importCasemgmt.java,220.0,34.0,parameter.incompatibleTypes,"expected=setInt, actual=BIGINT"
+OK,/database/mysql/importCasemgmt.java,253,29,/database/mysql/importCasemgmt.java,248.0,51.0,parameter.set,
+ERROR,/database/mysql/importCasemgmt.java,266,49,/database/mysql/importCasemgmt.java,248.0,51.0,column.incompatibleTypes,"expected=getLong, actual=INTEGER ISSUE_ID"
+OK,/database/mysql/importCasemgmt.java,257,33,/database/mysql/importCasemgmt.java,249.0,34.0,parameter.set,
+OK,/database/mysql/importCasemgmt.java,258,33,/database/mysql/importCasemgmt.java,249.0,34.0,parameter.set,
+ERROR,/database/mysql/importCasemgmt.java,350,33,/database/mysql/importCasemgmt.java,274.0,52.0,parameter.incompatibleTypes,"expected=setString, actual=INTEGER"
+ERROR,/database/mysql/importCasemgmt.java,351,33,/database/mysql/importCasemgmt.java,274.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=INTEGER"
+ERROR,/database/mysql/importCasemgmt.java,363,48,/database/mysql/importCasemgmt.java,274.0,52.0,column.incompatibleTypes,"expected=getLong, actual=INTEGER ID"
+ERROR,/database/mysql/importCasemgmt.java,387,33,/database/mysql/importCasemgmt.java,274.0,52.0,parameter.incompatibleTypes,"expected=setString, actual=INTEGER"
+ERROR,/database/mysql/importCasemgmt.java,388,33,/database/mysql/importCasemgmt.java,274.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=INTEGER"
+ERROR,/database/mysql/importCasemgmt.java,400,48,/database/mysql/importCasemgmt.java,274.0,52.0,column.incompatibleTypes,"expected=getLong, actual=INTEGER ID"
+ERROR,/database/mysql/importCasemgmt.java,423,33,/database/mysql/importCasemgmt.java,274.0,52.0,parameter.incompatibleTypes,"expected=setString, actual=INTEGER"
+ERROR,/database/mysql/importCasemgmt.java,424,33,/database/mysql/importCasemgmt.java,274.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=INTEGER"
+ERROR,/database/mysql/importCasemgmt.java,436,48,/database/mysql/importCasemgmt.java,274.0,52.0,column.incompatibleTypes,"expected=getLong, actual=INTEGER ID"
+ERROR,/database/mysql/importCasemgmt.java,459,33,/database/mysql/importCasemgmt.java,274.0,52.0,parameter.incompatibleTypes,"expected=setString, actual=INTEGER"
+ERROR,/database/mysql/importCasemgmt.java,460,33,/database/mysql/importCasemgmt.java,274.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=INTEGER"
+ERROR,/database/mysql/importCasemgmt.java,472,48,/database/mysql/importCasemgmt.java,274.0,52.0,column.incompatibleTypes,"expected=getLong, actual=INTEGER ID"
+ERROR,/database/mysql/importCasemgmt.java,495,33,/database/mysql/importCasemgmt.java,274.0,52.0,parameter.incompatibleTypes,"expected=setString, actual=INTEGER"
+ERROR,/database/mysql/importCasemgmt.java,496,33,/database/mysql/importCasemgmt.java,274.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=INTEGER"
+ERROR,/database/mysql/importCasemgmt.java,508,48,/database/mysql/importCasemgmt.java,274.0,52.0,column.incompatibleTypes,"expected=getLong, actual=INTEGER ID"
+ERROR,/database/mysql/importCasemgmt.java,376,33,/database/mysql/importCasemgmt.java,279.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=INTEGER"
+ERROR,/database/mysql/importCasemgmt.java,377,33,/database/mysql/importCasemgmt.java,279.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=INTEGER"
+ERROR,/database/mysql/importCasemgmt.java,413,33,/database/mysql/importCasemgmt.java,279.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=INTEGER"
+ERROR,/database/mysql/importCasemgmt.java,414,33,/database/mysql/importCasemgmt.java,279.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=INTEGER"
+ERROR,/database/mysql/importCasemgmt.java,449,33,/database/mysql/importCasemgmt.java,279.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=INTEGER"
+ERROR,/database/mysql/importCasemgmt.java,450,33,/database/mysql/importCasemgmt.java,279.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=INTEGER"
+ERROR,/database/mysql/importCasemgmt.java,485,33,/database/mysql/importCasemgmt.java,279.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=INTEGER"
+ERROR,/database/mysql/importCasemgmt.java,486,33,/database/mysql/importCasemgmt.java,279.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=INTEGER"
+ERROR,/database/mysql/importCasemgmt.java,521,33,/database/mysql/importCasemgmt.java,279.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=INTEGER"
+ERROR,/database/mysql/importCasemgmt.java,522,33,/database/mysql/importCasemgmt.java,279.0,52.0,parameter.incompatibleTypes,"expected=setLong, actual=INTEGER"
+ERROR,/database/mysql/importCasemgmt.java,298,49,/database/mysql/importCasemgmt.java,285.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+OK,/database/mysql/importCasemgmt.java,299,49,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+OK,/database/mysql/importCasemgmt.java,301,37,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+ERROR,/database/mysql/importCasemgmt.java,308,68,/database/mysql/importCasemgmt.java,285.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+ERROR,/database/mysql/importCasemgmt.java,316,49,/database/mysql/importCasemgmt.java,285.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+OK,/database/mysql/importCasemgmt.java,317,49,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+OK,/database/mysql/importCasemgmt.java,318,64,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+ERROR,/database/mysql/importCasemgmt.java,326,89,/database/mysql/importCasemgmt.java,285.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+ERROR,/database/mysql/importCasemgmt.java,329,71,/database/mysql/importCasemgmt.java,285.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+ERROR,/database/mysql/importCasemgmt.java,331,52,/database/mysql/importCasemgmt.java,285.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+OK,/database/mysql/importCasemgmt.java,332,52,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+OK,/database/mysql/importCasemgmt.java,333,52,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+OK,/database/mysql/importCasemgmt.java,334,52,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+OK,/database/mysql/importCasemgmt.java,335,52,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+OK,/database/mysql/importCasemgmt.java,336,52,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+OK,/database/mysql/importCasemgmt.java,337,52,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+OK,/database/mysql/importCasemgmt.java,338,55,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+ERROR,/database/mysql/importCasemgmt.java,344,77,/database/mysql/importCasemgmt.java,285.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+OK,/database/mysql/importCasemgmt.java,347,36,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+ERROR,/database/mysql/importCasemgmt.java,349,86,/database/mysql/importCasemgmt.java,285.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+ERROR,/database/mysql/importCasemgmt.java,350,52,/database/mysql/importCasemgmt.java,285.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+ERROR,/database/mysql/importCasemgmt.java,354,60,/database/mysql/importCasemgmt.java,285.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+OK,/database/mysql/importCasemgmt.java,366,55,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+ERROR,/database/mysql/importCasemgmt.java,367,52,/database/mysql/importCasemgmt.java,285.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+OK,/database/mysql/importCasemgmt.java,368,52,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+OK,/database/mysql/importCasemgmt.java,372,55,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+OK,/database/mysql/importCasemgmt.java,384,36,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+ERROR,/database/mysql/importCasemgmt.java,386,82,/database/mysql/importCasemgmt.java,285.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+ERROR,/database/mysql/importCasemgmt.java,387,52,/database/mysql/importCasemgmt.java,285.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+ERROR,/database/mysql/importCasemgmt.java,391,60,/database/mysql/importCasemgmt.java,285.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+OK,/database/mysql/importCasemgmt.java,403,55,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+ERROR,/database/mysql/importCasemgmt.java,404,52,/database/mysql/importCasemgmt.java,285.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+OK,/database/mysql/importCasemgmt.java,405,52,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+OK,/database/mysql/importCasemgmt.java,409,55,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+OK,/database/mysql/importCasemgmt.java,420,36,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+ERROR,/database/mysql/importCasemgmt.java,422,87,/database/mysql/importCasemgmt.java,285.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+ERROR,/database/mysql/importCasemgmt.java,423,52,/database/mysql/importCasemgmt.java,285.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+ERROR,/database/mysql/importCasemgmt.java,427,60,/database/mysql/importCasemgmt.java,285.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+OK,/database/mysql/importCasemgmt.java,439,55,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+ERROR,/database/mysql/importCasemgmt.java,440,52,/database/mysql/importCasemgmt.java,285.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+OK,/database/mysql/importCasemgmt.java,441,52,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+OK,/database/mysql/importCasemgmt.java,445,55,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+OK,/database/mysql/importCasemgmt.java,456,36,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+ERROR,/database/mysql/importCasemgmt.java,458,88,/database/mysql/importCasemgmt.java,285.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+ERROR,/database/mysql/importCasemgmt.java,459,52,/database/mysql/importCasemgmt.java,285.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+ERROR,/database/mysql/importCasemgmt.java,463,60,/database/mysql/importCasemgmt.java,285.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+OK,/database/mysql/importCasemgmt.java,475,55,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+ERROR,/database/mysql/importCasemgmt.java,476,52,/database/mysql/importCasemgmt.java,285.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+OK,/database/mysql/importCasemgmt.java,477,52,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+OK,/database/mysql/importCasemgmt.java,481,55,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+OK,/database/mysql/importCasemgmt.java,492,36,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+ERROR,/database/mysql/importCasemgmt.java,494,81,/database/mysql/importCasemgmt.java,285.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+ERROR,/database/mysql/importCasemgmt.java,495,52,/database/mysql/importCasemgmt.java,285.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+ERROR,/database/mysql/importCasemgmt.java,499,60,/database/mysql/importCasemgmt.java,285.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+OK,/database/mysql/importCasemgmt.java,511,55,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+ERROR,/database/mysql/importCasemgmt.java,512,52,/database/mysql/importCasemgmt.java,285.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+OK,/database/mysql/importCasemgmt.java,513,52,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+OK,/database/mysql/importCasemgmt.java,517,55,/database/mysql/importCasemgmt.java,285.0,30.0,column.get,
+OK,/database/mysql/importCasemgmt.java,331,29,/database/mysql/importCasemgmt.java,289.0,55.0,parameter.set,
+OK,/database/mysql/importCasemgmt.java,332,29,/database/mysql/importCasemgmt.java,289.0,55.0,parameter.set,
+OK,/database/mysql/importCasemgmt.java,333,29,/database/mysql/importCasemgmt.java,289.0,55.0,parameter.set,
+OK,/database/mysql/importCasemgmt.java,334,29,/database/mysql/importCasemgmt.java,289.0,55.0,parameter.set,
+OK,/database/mysql/importCasemgmt.java,335,29,/database/mysql/importCasemgmt.java,289.0,55.0,parameter.set,
+OK,/database/mysql/importCasemgmt.java,336,29,/database/mysql/importCasemgmt.java,289.0,55.0,parameter.set,
+OK,/database/mysql/importCasemgmt.java,337,29,/database/mysql/importCasemgmt.java,289.0,55.0,parameter.set,
+OK,/database/mysql/importCasemgmt.java,338,29,/database/mysql/importCasemgmt.java,289.0,55.0,parameter.set,
+ERROR,/database/mysql/importCasemgmt.java,298,29,/database/mysql/importCasemgmt.java,291.0,34.0,parameter.incompatibleTypes,"expected=setString, actual=INTEGER"
+OK,/database/mysql/importCasemgmt.java,299,29,/database/mysql/importCasemgmt.java,291.0,34.0,parameter.set,
+ERROR,/database/mysql/importCasemgmt.java,305,29,/database/mysql/importCasemgmt.java,291.0,34.0,parameter.incompatibleTypes,"expected=setDate, actual=TIMESTAMP"
+ERROR,/database/mysql/importCasemgmt.java,541,29,/database/mysql/importCasemgmt.java,537.0,34.0,parameter.incompatibleTypes,"expected=setDate, actual=TIMESTAMP"
+ERROR,/database/mysql/importCasemgmt.java,542,29,/database/mysql/importCasemgmt.java,537.0,34.0,parameter.incompatibleTypes,"expected=setString, actual=INTEGER"
+OK,/database/mysql/importCasemgmt.java,543,29,/database/mysql/importCasemgmt.java,537.0,34.0,parameter.set,
+OK,/database/mysql/importCasemgmt.java,540,42,/database/mysql/importCasemgmt.java,538.0,30.0,column.get,
+ERROR,/database/mysql/importCasemgmt.java,542,49,/database/mysql/importCasemgmt.java,538.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+OK,/database/mysql/importCasemgmt.java,543,49,/database/mysql/importCasemgmt.java,538.0,30.0,column.get,
+ERROR,/database/mysql/importCasemgmt.java,546,52,/database/mysql/importCasemgmt.java,538.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+OK,/database/mysql/importCasemgmt.java,552,52,/database/mysql/importCasemgmt.java,538.0,30.0,column.get,
+ERROR,/database/mysql/importCasemgmt.java,553,49,/database/mysql/importCasemgmt.java,538.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+OK,/database/mysql/importCasemgmt.java,554,49,/database/mysql/importCasemgmt.java,538.0,30.0,column.get,
+OK,/database/mysql/importCasemgmt.java,555,64,/database/mysql/importCasemgmt.java,538.0,30.0,column.get,
+OK,/database/mysql/importCasemgmt.java,560,52,/database/mysql/importCasemgmt.java,538.0,30.0,column.get,
+ERROR,/database/mysql/importCasemgmt.java,565,78,/database/mysql/importCasemgmt.java,538.0,30.0,column.incompatibleTypes,"expected=getString, actual=INTEGER demographicNo"
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/com/quatro/dao/LookupDao.java,179,44,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/com/quatro/dao/LookupDao.java,333,37,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/com/quatro/dao/LookupDao.java,673,37,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/com/quatro/dao/LookupDao.java,678,37,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/PregnancyFormsDao.java,45,38,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/PregnancyFormsDao.java,60,38,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/org/oscarehr/common/dao/PregnancyFormsDao.java,75,38,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/Misc.java,507,48,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/Misc.java,517,48,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/eform/EFormUtil.java,572,77,,,,nonlocal.result.set,method=getObject
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/Frm2MinWalkRecord.java,101,40,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/Frm2MinWalkRecord.java,116,80,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmARRecord.java,49,109,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmBCClientChartChecklistRecord.java,39,82,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmBCClientChartChecklistRecord.java,40,78,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmBCClientChartChecklistRecord.java,41,79,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmBCClientChartChecklistRecord.java,43,69,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmBCClientChartChecklistRecord.java,81,81,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmBCHPRecord.java,53,53,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmBCHPRecord.java,58,54,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmBCHPRecord.java,58,85,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmBCHPRecord.java,59,46,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmBCHPRecord.java,60,48,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmBCHPRecord.java,60,79,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmBCHPRecord.java,63,30,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmBCHPRecord.java,85,58,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmBCHPRecord.java,85,89,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmBCHPRecord.java,86,50,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmBCHPRecord.java,87,52,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmBCHPRecord.java,87,83,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmBCINRRecord.java,28,125,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmBCINRRecord.java,81,39,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmBCINRRecord.java,111,37,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmBCINRRecord.java,116,45,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmBCINRRecord.java,121,62,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmBCINRRecord.java,122,57,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmBCINRRecord.java,124,65,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmBCINRRecord.java,125,69,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmCESDRecord.java,90,40,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmCESDRecord.java,105,80,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmCaregiverRecord.java,90,40,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmCaregiverRecord.java,105,80,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmCostQuestionnaireRecord.java,101,40,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmCostQuestionnaireRecord.java,116,80,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmDischargeSummaryRecord.java,100,58,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmFallsRecord.java,99,40,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmFallsRecord.java,114,80,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmGripStrengthRecord.java,99,40,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmGripStrengthRecord.java,114,80,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmGrowth0_36Record.java,28,109,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmGrowth0_36Record.java,51,109,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmHomeFallsRecord.java,101,40,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmHomeFallsRecord.java,116,80,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmIntakeInfoRecord.java,101,40,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmIntakeInfoRecord.java,116,80,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmInternetAccessRecord.java,101,40,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmInternetAccessRecord.java,116,80,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmInvoiceRecord.java,29,109,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmLabReqRecord.java,59,108,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmLateLifeFDIDisabilityRecord.java,101,40,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmLateLifeFDIDisabilityRecord.java,116,80,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmLateLifeFDIFunctionRecord.java,101,40,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmLateLifeFDIFunctionRecord.java,116,80,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmONARRecord.java,28,109,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmONARRecord.java,44,130,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmRecordHelp.java,69,25,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmRecordHelp.java,74,60,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmRecordHelp.java,76,60,,,,nonlocal.result.set,method=getTimestamp
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmRecordHelp.java,137,19,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmRecordHelp.java,253,21,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmRecordHelp.java,258,56,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmRecordHelp.java,274,29,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmRhImmuneGlobulinRecord.java,114,40,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmRhImmuneGlobulinRecord.java,129,80,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmRourke2006Record.java,153,72,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmRourkeRecord.java,134,76,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmSF36CaregiverRecord.java,101,40,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmSF36CaregiverRecord.java,116,80,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmSF36Record.java,101,40,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmSF36Record.java,116,80,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmSatisfactionScaleRecord.java,141,40,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmSatisfactionScaleRecord.java,156,80,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmSelfAdministeredRecord.java,101,40,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmSelfAdministeredRecord.java,116,80,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmSelfEfficacyRecord.java,101,40,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmSelfEfficacyRecord.java,116,80,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmSelfManagementRecord.java,101,40,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmSelfManagementRecord.java,116,80,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmTreatmentPrefRecord.java,101,40,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmTreatmentPrefRecord.java,116,80,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/FrmchfRecord.java,51,108,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/data/FrmData.java,104,64,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/data/FrmData.java,104,135,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/data/FrmData.java,130,64,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/data/FrmData.java,130,135,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/FrmStudyPING_DiabetesRecord.java,25,71,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/FrmStudyPING_DiabetesRecord.java,25,102,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/FrmStudyPING_DiabetesRecord.java,25,134,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/FrmStudyPING_DiabetesRecord.java,26,69,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/FrmStudydiabete2Record.java,65,28,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/FrmStudydiabete2Record.java,70,64,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/FrmStudydiabete2Record.java,133,19,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/FrmStudydiabetes2subjectRecord.java,65,28,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/FrmStudydiabetes2subjectRecord.java,70,64,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/FrmStudydiabetes2subjectRecord.java,133,19,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,724,33,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,725,41,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,726,43,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,727,43,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,728,34,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,730,39,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,731,34,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,732,39,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,733,41,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,734,37,,,,nonlocal.result.set,method=getDouble
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,735,42,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,736,36,,,,nonlocal.result.set,method=getDouble
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,737,41,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,738,37,,,,nonlocal.result.set,method=getDouble
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,739,34,,,,nonlocal.result.set,method=getDouble
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,740,34,,,,nonlocal.result.set,method=getDouble
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,741,34,,,,nonlocal.result.set,method=getDouble
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,742,40,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,743,43,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,744,42,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,745,46,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,746,35,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,747,35,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,748,43,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,749,39,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,750,40,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,751,39,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,752,39,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,753,40,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,754,38,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,755,34,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,756,41,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,757,42,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,758,44,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,759,40,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,760,43,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,761,43,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,762,42,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,763,37,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,764,48,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,765,48,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,766,48,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,767,49,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,768,50,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,769,43,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,770,47,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,771,43,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,772,39,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,773,40,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,774,45,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,775,45,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,776,46,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,777,44,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,778,40,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,779,47,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,780,40,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,781,49,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,782,48,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,783,37,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,784,46,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,785,45,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,786,41,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,787,50,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,788,49,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,789,38,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,790,47,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,791,46,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,792,38,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,793,47,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,794,46,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,795,38,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,796,47,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,797,46,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,798,40,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,799,49,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,800,48,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,801,39,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,802,48,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,803,47,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,804,38,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,805,47,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,806,46,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,807,39,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,808,48,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,809,47,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,810,41,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,811,37,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,812,52,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,813,49,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,814,49,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,815,49,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/form/study/HSFO/HSFODAO.java,816,37,,,,nonlocal.result.set,method=getBoolean
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/CheckBillingData.java,284,34,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/CheckBillingData.java,287,28,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/CheckBillingData.java,291,28,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/CheckBillingData.java,294,28,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/CheckBillingData.java,297,28,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/CheckBillingData.java,297,50,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/CheckBillingData.java,302,34,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/CheckBillingData.java,303,30,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/CheckBillingData.java,310,40,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/CheckBillingData.java,313,29,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/CheckBillingData.java,314,34,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/CheckBillingData.java,317,28,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/CheckBillingData.java,320,36,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/CheckBillingData.java,322,29,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/CheckBillingData.java,329,33,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/CheckBillingData.java,330,30,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/CheckBillingData.java,330,63,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/CheckBillingData.java,332,30,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/CheckBillingData.java,332,63,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/CheckBillingData.java,339,31,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/CheckBillingData.java,340,36,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/CheckBillingData.java,342,40,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/CheckBillingData.java,345,29,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/CheckBillingData.java,355,32,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/CheckBillingData.java,358,34,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/CheckBillingData.java,364,32,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,164,29,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,169,32,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,275,51,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,281,43,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,282,213,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,282,265,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,282,325,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,282,400,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,282,487,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,282,575,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,282,664,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,282,735,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,284,189,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,284,264,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,284,351,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,284,439,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,284,528,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,284,599,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,287,55,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,292,47,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,570,44,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,571,44,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,573,44,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,574,44,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,575,43,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,576,44,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,577,44,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,578,51,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,579,43,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,580,44,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,581,44,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,582,43,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,583,43,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,584,43,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,585,43,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,586,44,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,587,43,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,588,44,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,590,45,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,591,45,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,592,45,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,594,44,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,595,43,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,596,43,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,597,43,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,598,43,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,599,43,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,600,43,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,601,43,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,602,43,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,603,43,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,604,44,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,606,44,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,607,43,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,608,43,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,609,43,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,610,43,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,612,45,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,613,45,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,614,45,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,615,45,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,616,45,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,617,45,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,618,45,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,619,45,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,620,45,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,621,45,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,622,45,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/MSP/ExtractBean.java,623,45,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/CheckBillingData.java,298,34,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/CheckBillingData.java,301,28,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/CheckBillingData.java,305,28,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/CheckBillingData.java,308,28,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/CheckBillingData.java,311,28,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/CheckBillingData.java,311,50,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/CheckBillingData.java,316,34,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/CheckBillingData.java,317,30,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/CheckBillingData.java,324,40,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/CheckBillingData.java,327,29,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/CheckBillingData.java,328,34,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/CheckBillingData.java,331,28,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/CheckBillingData.java,334,36,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/CheckBillingData.java,336,29,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/CheckBillingData.java,343,33,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/CheckBillingData.java,344,30,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/CheckBillingData.java,344,63,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/CheckBillingData.java,345,30,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/CheckBillingData.java,345,63,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/CheckBillingData.java,351,31,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/CheckBillingData.java,352,36,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/CheckBillingData.java,354,40,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/CheckBillingData.java,357,29,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/CheckBillingData.java,367,32,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/CheckBillingData.java,370,34,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/CheckBillingData.java,376,32,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1142,49,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1143,48,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1144,44,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1145,49,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1146,46,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1147,46,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1148,44,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1149,52,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1150,54,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1151,51,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1153,50,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1157,44,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1158,42,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1159,41,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1160,49,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1160,104,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1161,45,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1162,41,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1163,53,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1164,45,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1165,45,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1166,50,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1167,47,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1168,48,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1172,55,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1173,54,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1210,63,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1211,64,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1357,49,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1358,49,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1359,51,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1361,44,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1362,46,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1365,78,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1367,81,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1374,49,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1375,44,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1376,42,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1377,42,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1378,50,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1379,44,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1380,45,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1381,52,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1388,79,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1389,79,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1390,79,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1391,79,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1392,79,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1393,79,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1394,79,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1481,50,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1482,49,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1483,44,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1484,46,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1486,49,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1487,50,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1488,44,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1489,45,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1498,44,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1499,65,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1500,51,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1543,50,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1544,49,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1545,44,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1546,46,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1548,49,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1549,50,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1550,44,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1551,45,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1560,44,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1561,65,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/MSP/MSPReconcile.java,1562,51,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,60,38,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,61,27,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,62,34,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,63,33,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,64,32,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,65,29,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,66,33,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,67,31,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,68,28,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,69,37,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,70,35,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,71,36,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,72,37,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,73,36,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,74,38,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,75,36,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,76,29,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,77,34,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,78,34,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,79,40,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,80,31,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,81,31,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,82,27,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,83,28,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,84,25,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,85,26,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,86,27,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,87,29,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,88,29,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,89,30,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,90,27,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,91,31,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,92,28,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,93,32,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,94,30,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,95,32,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,96,29,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,97,33,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,98,31,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,99,26,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,100,24,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,101,26,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,102,25,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,103,26,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,104,30,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,105,32,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,106,32,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,107,31,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,108,30,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,109,27,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,110,31,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,111,34,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,112,30,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,113,32,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,114,29,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,115,34,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,116,26,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,117,30,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,118,30,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,119,29,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarBilling/ca/bc/administration/TeleplanCorrectionFormWCB.java,120,28,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarDB/DBPreparedHandler.java,221,29,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctARRecord.java,46,66,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctARRecord.java,46,104,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctARRecord.java,46,143,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctARRecord.java,47,58,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctARRecord.java,50,51,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctARRecord.java,51,53,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctARRecord.java,54,57,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctARRecord.java,55,57,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctARRecord.java,68,28,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctARRecord.java,73,64,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctARRecord.java,77,33,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctARRecord.java,138,32,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctARRecord.java,155,17,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctARRecord.java,171,24,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctARRecord.java,176,60,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctARRecord.java,178,29,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctAlphaRecord.java,62,28,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctAlphaRecord.java,67,64,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctAlphaRecord.java,129,19,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctAlphaRecord.java,145,24,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctAlphaRecord.java,150,60,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctAnnualRecord.java,95,28,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctAnnualRecord.java,110,68,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctAnnualRecord.java,224,19,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctMMSERecord.java,82,28,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctMMSERecord.java,95,68,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctMMSERecord.java,205,19,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctMentalHealthRecord.java,94,28,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctMentalHealthRecord.java,101,68,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctMentalHealthRecord.java,209,32,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctMentalHealthRecord.java,236,19,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctPalliativeCareRecord.java,84,28,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctPalliativeCareRecord.java,97,68,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctPalliativeCareRecord.java,205,19,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctPatientData.java,78,33,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctPatientData.java,79,128,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctPatientData.java,204,56,,,,nonlocal.result.set,method=getTimestamp
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctPeriMenopausalRecord.java,93,32,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctPeriMenopausalRecord.java,106,72,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctPeriMenopausalRecord.java,206,19,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctRourkeRecord.java,86,28,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctRourkeRecord.java,93,68,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctRourkeRecord.java,172,32,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctRourkeRecord.java,193,19,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctRourkeRecord.java,231,64,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctType2DiabetesRecord.java,64,28,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctType2DiabetesRecord.java,69,64,,,,nonlocal.result.set,method=getDate
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctType2DiabetesRecord.java,147,19,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarEncounter/data/EctType2DiabetesRecord.java,158,23,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarLab/ca/bc/PathNet/PathNetInfo.java,62,37,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarReport/ClinicalReports/SQLNumerator.java,96,28,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarReport/data/RptReportConfigData.java,62,21,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarReport/data/RptReportConfigData.java,156,41,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarReport/data/RptReportConfigData.java,157,47,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarReport/data/RptReportCreator.java,167,50,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarReport/data/RptReportCreator.java,185,94,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarReport/data/RptReportCreator.java,188,73,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarReport/data/RptReportFilter.java,102,27,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarReport/data/RptReportFilter.java,122,27,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarReport/data/RptReportItem.java,98,41,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarReport/data/RptReportItem.java,99,35,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarReport/pageUtil/RptDownloadCSVServlet.java,317,75,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarReport/pageUtil/RptDownloadCSVServlet.java,379,51,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarReport/pageUtil/RptDownloadCSVServlet.java,379,91,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarReport/pageUtil/RptDownloadCSVServlet.java,396,74,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarReport/pageUtil/RptDownloadCSVServlet.java,408,51,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarReport/pageUtil/RptDownloadCSVServlet.java,408,91,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarReport/pageUtil/RptDownloadCSVServlet.java,449,62,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarReport/pageUtil/RptDownloadCSVServlet.java,488,66,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarReport/pageUtil/RptDownloadCSVServlet.java,527,51,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarReport/pageUtil/RptDownloadCSVServlet.java,527,91,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarReport/pageUtil/RptDownloadCSVServlet.java,546,74,,,,nonlocal.result.set,method=getInt
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarReport/pageUtil/RptDownloadCSVServlet.java,556,51,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarReport/pageUtil/RptDownloadCSVServlet.java,556,91,,,,nonlocal.result.set,method=getString
+WARNING,/artifact/projects/oscar/oscar-noannos/src/main/java/oscar/oscarReport/pageUtil/RptDownloadCSVServlet.java,568,66,,,,nonlocal.result.set,method=getInt
